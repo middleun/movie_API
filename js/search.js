@@ -43,7 +43,13 @@ $(function(){
         
   
          $(".grid").imagesLoaded(function() {
-        //  $(".grid").masonry('appended', itemContents);
+        // $(".grid").masonry('appended', itemContents);
+        $('.grid').masonry({
+            itemSelector: '.gridItem',
+            columnWidth: 160,
+            horizontalOrder: true,
+            fitWidth : true 
+          });
       });
         
 

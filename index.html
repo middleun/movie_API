@@ -39,16 +39,47 @@
                     <button type="button" class="sendBtn" onkeyup="keydown();"><i class="fas fa-search"></i></button>
 
                     
+                    </div>
+
+                    
+                </div>
+                <div class="loading">
+                    <img src="/movie_api/img/loading.gif" alt="">
+                </div>
+                <!-- end of search box -->
+            </div>
+            <!-- end of search section -->
+
+            <div class="container clear">
+                    
+            </div>
+                <!-- end of container -->
+
+            <div class="numContainer">
+                <div class="numBtns">
+                    <button type="button" class="prev">prev</button>
+                    <button type="button" class="pageNum" value=1>1</button>
+                    <button type="button" class="pageNum" value=2>2</button>
+                    <button type="button" class="pageNum" value=3>3</button>
+                    <button type="button" class="pageNum" value=4>4</button>
+                    <button type="button" class="pageNum" value=5>5</button>
+                    <button type="button" class="next">next</button>
+
                 </div>
             </div>
+                <!-- end of number container -->
             
             
-         </div>
+        </div>
+
     </div>
 
 
     <!-- jquery CDN link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="/movie_api/js/recent.js"></script>
+
     <script>
         $(function(){
             function searchMovie(){

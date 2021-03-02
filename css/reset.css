@@ -2,9 +2,10 @@
 body{display:block; box-sizing: border-box; font-family:'Work Sans'; background:#928bbb;}
 
 
-.wrap{width:100%; height:100vh; background:url(../img/background_2.jpg) no-repeat 50%;background-size:cover;
+.wrap{width:100%; height:100%; background:url(../img/background_2.jpg) no-repeat center center fixed;background-size:cover;
 position:relative;}
 .center{width:100%; height:100%; margin:0 auto; max-width: 1200px;}
+.clear:after{display:block; content: ''; clear:both;}
 
 
 ol,ul{list-style: none;}
