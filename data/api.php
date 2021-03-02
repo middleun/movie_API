@@ -2,7 +2,7 @@
 <?php
   $client_id = "RIhz8EcaJIzl8BIiTD1l";
   $client_secret = "zzR3xjtwhI";
-  $encText = urlencode("반도");
+  $encText = urlencode($_POST['search_value']);
   $url = "https://openapi.naver.com/v1/search/movie.json?query=".$encText; // json 결과
 //  $url = "https://openapi.naver.com/v1/search/blog.xml?query=".$encText; // xml 결과
   $is_post = false;
