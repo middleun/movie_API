@@ -1,1 +1,18 @@
 210302 movie_api project 시작*
+
+**color
+1. main color
+
+#928bbb
+
+#4a465e 포인트
+
+2. neutral
+#393631 회색계열
+
+#d0bb9c 베이지계열 
+#807974
+
+
+**to do
+1. ui 변경

@@ -1,0 +1,11 @@
+@media screen and (max-width:1280px){
+.center{max-width:800px;}
+
+}
+
+
+@media screen and (max-width:750px){
+    .center{max-width:500px;}
+    .wrap .searchSec .searchBox .searchInput{width:300px; height:30px;}
+    
+    }

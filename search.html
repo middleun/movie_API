@@ -4,65 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movieeeng</title>
+    <title>FeelmSoGood search</title>
+
+     <!-- reset css link -->
+     <link rel="stylesheet" href="/movie_api/css/reset.css">
+
+     <!-- style css link -->
+     <link rel="stylesheet" href="/movie_api/css/style.css">
+
+     <!-- media css link -->
+    <link rel="stylesheet" href="/movie_api/css/media.css">
+ 
+     <!-- font awesome link -->
+     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+
 </head>
 <body>
-    <div class="wrap">
-        <!-- <div class="movie_box">
-            <img src="" alt="">
-            <h2>제목 : </h2>
-            <p>감독 : </p>
-            <p>개봉일 : </p>
-            <p>평점 : </p>
-        </div> -->
+    <div class="wrap search">
+        <div class="center">
+            <div class="grid clear">
+                <div class="gridSizer">
+
+                </div>
+                <!-- <div class="showMore">
+                    <a href="${item.link}"><i class="fas fa-search"></i></a>
+                </div>
+                <div class="imgBox">
+                    <img src="${item.image}" alt="">
+                </div>
+                <div class="txtBox">
+                    <h2>${item.title}</h2>
+                    <h2>제목 : ${item.title}</h2>
+                    <p>감독 : ${item.director}</p>
+                    <p>개봉일 : ${item.pubDate}</p>
+                    <p>평점 : ${item.userRating}</p>
+                </div> -->
+            </div>
+            
+            
+         </div>
     </div>
 
 
     <!-- jquery CDN link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        $(function(){
-            let searchValue = document.location.href.split("=")[1];
-            let decodeValue = decodeURI(searchValue);
-            console.log(decodeValue);
-            //  한글로 검색하면 encode한 코드가 결과로 나옴.so,decode해줘야
-            
 
-            $.ajax({
-               type:"POST",
-               url:"../movie_api/data/api.php",
-               data: {
-                   search_value: decodeValue,
-               },
-               success:function(data){  
-                   let obj=JSON.parse(data);  
-                //    console.log(obj);
-                //    console.log(obj.items);
+    <!-- jQuery Masonly CDN link -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 
-                if(obj.items.length == 0){
-                    alert("데이터가 없습니다");
-                    location.href="/movie_api/index.html"
-                }
-                let itemContents =[];
-                $.each(obj.items, function(i, item){
-                    // console.log(item.title);
-                    let itemHTML =  `<div class="movie_box">
-                                        <img src="${item.image}" alt="">
-                                        <h2>제목 : ${item.title}</h2>
-                                        <p>감독 : ${item.director}</p>
-                                        <p>개봉일 : ${item.pubDate}</p>
-                                        <p>평점 : ${item.userRating}</p>
-                                    </div>`
-                            itemContents.push($(itemHTML).get(0));                                  
-                });
-                $(".wrap").append(itemContents);
-                
+    <!-- imageloaded CDN link -->
 
-               }, 
-            });
-        });
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
+    <!-- main jQuery link -->
+    <script src="/movie_api/js/search.js"></script>
+
 
     
-    </script>
+       
+
+   
 </body>
 </html>

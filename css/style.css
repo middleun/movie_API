@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/*******************
+ main page style 
+ *********************/
+
+/* .container{width:70%; height:100%; _max-width: 1100px; right:0; top:0; bottom:0; position:absolute;
+padding-right:10%;} */
+
+.wrap .searchSec{width:100%; height:100%;display:flex; justify-content: center; align-items: center; flex-direction: column; }
+.wrap .searchSec .quoteTxt{width:100%; height:50px; text-align:center; margin-bottom:10px;} 
+.wrap .searchSec .quoteTxt h2{color:#fff; font-size:30px; font-weight: 500;}
+
+.wrap .searchSec .searchBox{display:flex; justify-content: center; align-items: center;}
+
+
+/* searchInput animation */
+.wrap .searchSec .searchBox .searchInput{width:500px; height:40px; padding:10px; border:none; display: inline-block;
+border-radius: 20px;  }
+.wrap .searchSec .searchBox .searchInput::placeholder{font-family:"Work Sans"; font-size:16px;color:#fff;}
+
+.wrap .searchSec .searchBox .searchInput.focusEvent{background-color: #4a465e; border: 2px solid transparent; 
+-webkit-transition: background-color 0.25s, border-color 0.25s;transition: background-color 0.25s, border-color 0.25s;}
+.wrap .searchSec .searchBox .searchInput.focusEvent:focus {-webkit-transform: translate3d(0, 0, 0);transform: translate3d(0, 0, 0);
+background-color: #fff; border-color: #4a465e; }
+.wrap .searchSec .searchBox .searchInput.focusEvent:focus::after {-webkit-transform: translate3d(0, 100%, 0);transform: translate3d(0, 100%, 0); }
+.wrap .searchSec .searchBox .searchInput.focusEvent:focus::placeholder{color:#4a465e;}
+
+.wrap .searchSec .searchBox button{width:50px; height:50px; border:none; margin-left:10px; background:none; border-radius: 20px; transition:all 0.4s linear;}
+.wrap .searchSec .searchBox button i{color:#4a465e; font-size:30px; cursor: pointer;}
+.wrap .searchSec .searchBox button:hover{transform: scale(1.2); }
+.wrap .searchSec .searchBox button:hover i{color:#fff;}
+
+
+/* search result page style */
+
+
+
+/*******************
+search result page style 
+ *********************/
+ .wrap.search{background:#928bbb; position:relative; }
+
+
+ .grid{width:100%; height:100vh; padding:100px 0; font-family:'Noto Sans KR'; }
+ .grid .gridItem{width:20%; height:auto;position:relative; float:left; padding:5px; background:#fff; margin:20px;
+border-radius: 20px; display:flex; flex-direction: column;justify-content: center; align-items: center;}
+ .grid .gridItem>div{width:100%; height:100%;border:8px solid #fff; position:relative;}
+ .grid .gridSizer{width:33.33%;}
+ .grid .gridItem .imgBox{width:90%; height:50%; overflow:hidden;  border-radius:20px;}
+ .grid .gridItem .imgBox img{width:100%; border-radius:20px;}
+
+ .grid .gridItem .txtBox{width:90%; height:50%;  border-radius:20px;_padding:10px; background:none; text-align:center;}
+ .grid .gridItem .txtBox h2{font-size:20px; border-bottom:2px solid #4a465e49 ; padding:5px; margin-bottom:5px;
+color:#928bbb;}
