@@ -30,38 +30,47 @@
     <div class="wrap">     
         <div class="center">     
             <div id="header">
-                    <div class="topNav">
-                        <ul>
-                            <li><a href="/movie_api/index.html">Home</a></li>
-                            <li><a href="/movie_api/recent.html">Latest</a></li>
-                            <li><a href="#">Genre</a></li>
-                            <li><a href="#">More</a></li>
-                        </ul>
-                    </div>
-            </div>       
-        
-            
-            
-            <div class="searchSec">
-                <div class="quoteTxt">
-                    <h2><i class="fas fa-quote-left"></i>Do The Next Right Thing<i class="fas fa-quote-right"></i></h2>
+                <div class="topNav">
+                    <ul>
+                        <li><a href="/movie_api/index.html">Home</a></li>
+                        <li><a href="/movie_api/recent.html">Latest</a></li>
+                        <li><a href="#">Genre</a></li>
+                        <li><a href="#">More</a></li>
+                    </ul>
                 </div>
-                <div class="searchBox">
-                    
-                    <input type="text" class="searchInput focusEvent" placeholder="search">
-                    <button type="button" class="sendBtn" onkeyup="keydown();"><i class="fas fa-search"></i></button>
+            </div>       
+            
+            
+            <div class="loadingBox">
+                <img src="/movie_api/img/loading.gif" alt="">
+            </div>          
 
-                    
-                </div>                    
-                <!-- end of search box -->  
-                
+            
+            <!-- end of loading Box -->
 
-                
+            <div class="recentSec">
+                <div class="movieContainer clear">
+                        
+                </div>
+                    <!-- end of container -->
+
+                <div class="numContainer">
+                    <div class="numBtns">
+                        <button type="button" class="prev arrow"><i class="fas fa-angle-left"></i></button>
+                        <button type="button" class="pageNum" value=1>1</button>
+                        <button type="button" class="pageNum" value=2>2</button>
+                        <button type="button" class="pageNum" value=3>3</button>
+                        <button type="button" class="pageNum" value=4>4</button>
+                        <button type="button" class="pageNum" value=5>5</button>
+                        <button type="button" class="next arrow"><i class="fas fa-angle-right"></i></button>
+
+                    </div>
+                </div>
+                    <!-- end of number container -->
             </div>
-            <!-- end of search section -->
-          
+            <!-- end of recent section -->
 
-                       
+            
             
             
         </div>
