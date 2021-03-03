@@ -1,11 +1,51 @@
 @media screen and (max-width:1280px){
-.center{max-width:800px;}
+.center{max-width:900px;}
+
+.grid{transform:translateX(-48%);}
+.grid .gridSizer{width:33.333%;}
+.grid .gridItem{width:25%;}
+/* .grid .gridItem{width:20%; height:auto;position:relative; _float:left; background:none; margin:20px;} */
+
+
 
 }
 
+@media screen and (max-width:1024px){
+    .center{max-width:800px;}
 
-@media screen and (max-width:750px){
-    .center{max-width:500px;}
-    .wrap .searchSec .searchBox .searchInput{width:300px; height:30px;}
+}    
+
+
+@media screen and (max-width:850px){
+    .center{max-width:600px;}
+
+    .grid{transform:translateX(-47%);}
+    .grid .gridSizer{width:25%;}
+    .grid .gridItem{width:35%;}
+
+    .grid .gridItem .conBox .txtBox h2{font-size:16px;}
+
     
-    }
+
+    .searchSec .searchBox .searchInput{width:400px; height:30px; transition:all 0.4s linear;}
+    
+    
+}
+
+@media screen and (max-width:650px){
+    .center{max-width:500px;}
+
+    .searchSec .quoteTxt h2{font-size: 25px; transition:all 0.4s linear;}
+    .searchSec .quoteTxt h2 i{font-size: 25px; transition:all 0.4s linear;}
+    .searchSec .searchBox .searchInput{width:300px; height:30px;}
+
+    .grid{transform:translateX(-40%);}
+    .grid .gridSizer{width:20%;}
+    .grid .gridItem{width:30%;}
+
+    .grid .gridItem .conBox .txtBox h2{font-size:14px;}
+    .grid .gridItem .conBox .txtBox .date,
+    .grid .gridItem .conBox .txtBox .rating{display:none;}
+
+    
+}

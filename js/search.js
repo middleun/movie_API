@@ -13,46 +13,54 @@ $(function(){
        },
        success:function(data){  
            let obj=JSON.parse(data);  
-        //    console.log(obj);
-        //    console.log(obj.items);
+            //    console.log(obj);
+            //    console.log(obj.items);
 
-        if(obj.items.length == 0){
-            alert("데이터가 없습니다");
-            location.href="/movie_api/index.html"
-        }
-        let itemContents =[];
-        $.each(obj.items, function(i, item){
-            // console.log(item.title);
-            let itemHTML =  `<div class="gridItem">
-                                <div class="imgBox">
-                                    <img src="${item.image}" alt="">
-                                </div>
-                                <div class="txtBox">
+            if(obj.items.length == 0){
+                alert("데이터가 없습니다");
+                location.href="/movie_api/index.html"
+            }
+            let itemContents =[];
+            $.each(obj.items, function(i, item){
+                // console.log(item.title);
+                let itemHTML =  `<div class="gridItem">
+                                    <div class="moreBox">
+                                        <a href="${item.link}"><i class="fas fa-search"></i></a>
+                                    </div>
+                                    <div class="conBox">
+                                        <div class="imgBox">
+                                            <img src="${item.image}" alt="">
+                                        </div>
+                                        <div class="txtBox">
 
-                                    <h2> ${item.title}</h2>
-                                    <p> ${item.director}</p>
-                                    <p> ${item.pubDate}</p>
-                                    <p> ${item.userRating}</p>
-                                </div>    
+                                            <h2> ${item.title}</h2>
+                                            <p class="director"> ${item.director}</p>
+                                            <p class="date"> ${item.pubDate}</p>
+                                            <p class="rating"><i class="fas fa-star"> ${item.userRating}</i></p>
+                                        </div>  
+                                    </div>  
 
-                            </div>`
-                    itemContents.push($(itemHTML).get(0));                                  
-        });
-        $(".grid").append(itemContents);
-
-        
-  
-         $(".grid").imagesLoaded(function() {
-        // $(".grid").masonry('appended', itemContents);
-        $('.grid').masonry({
-            itemSelector: '.gridItem',
-            columnWidth: 160,
-            horizontalOrder: true,
-            fitWidth : true 
-          });
-      });
+                                </div>`
+                        itemContents.push($(itemHTML).get(0));                                  
+            });
         
 
-       }, 
+            $(".grid").append(itemContents);
+
+            
+    
+            $(".grid").imagesLoaded(function() {
+                // $(".grid").masonry('append', itemContents);
+                $('.grid').masonry({
+                    itemSelector: '.gridItem',
+                    columnWidth: '.gridSizer',
+                    // horizontalOrder: true,
+                    percentPosition: true 
+                });
+            });
+
+        }       
+
+        
     });
 });

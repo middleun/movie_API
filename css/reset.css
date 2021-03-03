@@ -8,8 +8,9 @@ body{display:block; box-sizing: border-box; font-family:'Work Sans'; background:
 
 
 ol,ul{list-style: none;}
-a{text-decoration:none; color:#000;}
+a{text-decoration:none; color:#000; cursor: pointer;}
 img{display:block;}
 button, input, textarea{outline: 0;  -webkit-appearance: none; background:#fff; border-radius:0;
-    font-family: 'Work Sans';}
+font-family: 'Work Sans';}
+button{cursor: pointer;}
 .input:focus {outline: none;}
