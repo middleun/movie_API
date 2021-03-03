@@ -1,48 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
+
 /*******************
  main page style 
  *********************/
 
-/* .container{width:70%; height:100%; _max-width: 1100px; right:0; top:0; bottom:0; position:absolute;
-padding-right:10%;} */
+/***** search section style *****/
+.searchSec{width:100%; height:30%; display:flex; _justify-content: center; _align-items: center; flex-direction: column;
+margin-top:50px; }
+.searchSec .quoteTxt{width:100%; height:50px; text-align:center; margin-bottom:10px;} 
+.searchSec .quoteTxt h2{color:#fff; font-size:30px; font-weight: 500;}
 
-.wrap .searchSec{width:100%; height:100%;display:flex; justify-content: center; align-items: center; flex-direction: column; }
-.wrap .searchSec .quoteTxt{width:100%; height:50px; text-align:center; margin-bottom:10px;} 
-.wrap .searchSec .quoteTxt h2{color:#fff; font-size:30px; font-weight: 500;}
-
-.wrap .searchSec .searchBox{display:flex; justify-content: center; align-items: center;}
+.searchSec .searchBox{display:flex; justify-content: center; align-items: center;}
 
 
-/* searchInput animation */
-.wrap .searchSec .searchBox .searchInput{width:500px; height:40px; padding:10px; border:none; display: inline-block;
-border-radius: 20px;  }
-.wrap .searchSec .searchBox .searchInput::placeholder{font-family:"Work Sans"; font-size:16px;color:#fff;}
+/* searchInput */
+.searchSec .searchBox .searchInput{width:500px; height:40px; padding:10px; border:none; display: inline-block;
+border-radius: 20px; color:#393631; font-size:16px;}
+.searchSec .searchBox .searchInput::placeholder{font-family:"Work Sans"; font-size:16px;color:#fff;}
 
-.wrap .searchSec .searchBox .searchInput.focusEvent{background-color: #4a465e; border: 2px solid transparent; 
+.searchSec .searchBox .searchInput.focusEvent{background-color: #4a465e; border: 2px solid transparent; 
 -webkit-transition: background-color 0.25s, border-color 0.25s;transition: background-color 0.25s, border-color 0.25s;}
-.wrap .searchSec .searchBox .searchInput.focusEvent:focus {-webkit-transform: translate3d(0, 0, 0);transform: translate3d(0, 0, 0);
+.searchSec .searchBox .searchInput.focusEvent:focus {-webkit-transform: translate3d(0, 0, 0);transform: translate3d(0, 0, 0);
 background-color: #fff; border-color: #4a465e; }
-.wrap .searchSec .searchBox .searchInput.focusEvent:focus::after {-webkit-transform: translate3d(0, 100%, 0);transform: translate3d(0, 100%, 0); }
-.wrap .searchSec .searchBox .searchInput.focusEvent:focus::placeholder{color:#4a465e;}
+.searchSec .searchBox .searchInput.focusEvent:focus::after {-webkit-transform: translate3d(0, 100%, 0);transform: translate3d(0, 100%, 0); }
+.searchSec .searchBox .searchInput.focusEvent:focus::placeholder{color:#4a465e;}
 
-.wrap .searchSec .searchBox button{width:50px; height:50px; border:none; margin-left:10px; background:none; border-radius: 20px; transition:all 0.4s linear;}
-.wrap .searchSec .searchBox button i{color:#4a465e; font-size:30px; cursor: pointer;}
-.wrap .searchSec .searchBox button:hover{transform: scale(1.2); }
-.wrap .searchSec .searchBox button:hover i{color:#fff;}
+.searchSec .searchBox button{width:50px; height:50px; border:none; margin-left:10px; background:none; border-radius: 20px; transition:all 0.4s linear;}
+.searchSec .searchBox button i{color:#4a465e; font-size:30px; cursor: pointer;}
+.searchSec .searchBox button:hover{transform: scale(1.2); }
+.searchSec .searchBox button:hover i{color:#fff;}
 
-
-.loading{width:100%; height:608px; display: flex; justify-content: center;align-items: center; _display:none;}
+/* loading box */
+.loadingBox{width:100%; height:608px; display: flex; justify-content: center;align-items: center; _display:none;}
  
-/* recent movie wrap style */
-.container, .numContainer{width:100%; height:auto; margin: auto; max-width: 1100px;}
-.recentMovieWrap{float:left; width:17%; padding:10px;}
-.recentMovieWrap img{width:100%;}
+
+/****** recent section style ******/
+.recentSec{width:100%; height:70%; margin:auto; max-width:1100px;}
+.movieContainer{_position:absolute;width:100%; height:auto; }
+.recentMovieWrap{float:left; width:17%; padding:10px; border-radius: 20px;}
+.recentMovieWrap img{width:100%;border-radius: 20px;}
 .recentMovieWrap h3{font-size:12px; white-space: nowrap; text-overflow:ellipsis; width:100%; overflow: hidden;}
 
-.numContainer{margin:20px auto 50px; display:flex; justify-content: center; align-items: center;}
-.numContainer button{border:none; width:20px; height: 20px;}
+.numContainer{width:100%; height:auto; margin: auto; max-width: 1100px; margin:20px auto 50px; display:flex; 
+justify-content: center; align-items: center; }
+.numContainer button{border:none; width:20px; height: 20px; font-weight: 600;}
+
+.numBtns button.active,
+.numBtns button.arrow{background:#4a465e; color:#fff;}
 
 
 
