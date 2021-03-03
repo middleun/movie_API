@@ -1,4 +1,5 @@
 $(function(){
+    // 주소 받아오는 함수
     let searchValue = document.location.href.split("=")[1];
     let decodeValue = decodeURI(searchValue);
     console.log(decodeValue);

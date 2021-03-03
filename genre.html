@@ -9,6 +9,9 @@
     <!-- reset css link -->
     <link rel="stylesheet" href="/movie_api/css/reset.css">
 
+    <!-- light slider css link -->
+    <link rel="stylesheet" href="/movie_api/plugin/lightslider.css">
+
     <!-- style css link -->
     <link rel="stylesheet" href="/movie_api/css/style.css">
 
@@ -19,9 +22,10 @@
     <link rel="stylesheet" href="/movie_api/css/animation.css">
 
 
-
     <!-- font awesome link -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+
+
 
 
 
@@ -34,31 +38,42 @@
                         <ul>
                             <li><a href="/movie_api/index.html">Home</a></li>
                             <li><a href="/movie_api/recent.html">Latest</a></li>
-                            <li><a href="#">Genre</a></li>
+                            <li><a href="/movie_api/genre.html">Genre</a></li>
                             <li><a href="#">More</a></li>
                         </ul>
                     </div>
             </div>       
         
             
-            
-            <div class="searchSec">
-                <div class="quoteTxt">
-                    <h2><i class="fas fa-quote-left"></i>Do The Next Right Thing<i class="fas fa-quote-right"></i></h2>
+            <div class="genreSec">
+                <div class="action genreBox">
+                    <div class="slideCon actionCon" id="actionSlide">
+                        <!-- <div class="slideBox">
+                            <div>
+                                <img src="/movie_api/img/sample.jpg" alt="">
+                                <div class="slideTxt">
+                                    <h3>Title</h3>
+                                    <p class="rating"></p>
+                                </div>
+                                <a href="#">Detail</a>
+                            </div>
+                        </div>
+                        end of slide box -->
+                        
+                    </div>
+                    <!-- end of slideCon -->
                 </div>
-                <div class="searchBox">
-                    
-                    <input type="text" class="searchInput focusEvent" placeholder="search">
-                    <button type="button" class="sendBtn" onkeyup="keydown();"><i class="fas fa-search"></i></button>
+                <!-- end of action -->
+                <div class="romance genreBox">
+                    <div class="slideCon romanceCon" id="romanceSlide">
 
-                    
-                </div>                    
-                <!-- end of search box -->  
-                
+                </div>
+                <div class="drama genreBox">
+                    <div class="slideCon dramaCon" id="dramaSlide">
 
-                
+                </div>
             </div>
-            <!-- end of search section -->
+           
           
 
                        
@@ -71,10 +86,14 @@
 
     <!-- jquery CDN link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+    
+    <!-- lightslider jQuery link -->
+    <script src="/movie_api/plugin/lightslider.js"></script>
+    
+    <!-- genre page jQuery link -->
     <script src="/movie_api/js/genre.js"></script>
 
-    <script>
+    <!-- <script>
         $(function(){
             function searchMovie(){
                 let searchResult=$(".searchInput").val();
@@ -101,6 +120,6 @@
         });
 
     
-    </script>
+    </script> -->
 </body>
 </html>
