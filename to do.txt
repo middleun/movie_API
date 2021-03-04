@@ -32,7 +32,11 @@
 9. genre페이지 loading box추가
 10.genre페이지 탭버튼
 11. 상세페이지 
->>이미지 찾기 
+ - 배경 이미지 찾기 
+ -  상세 데이터 불러오기, 연결
+ - ui변경 
+ - movie suggestion 추가?
+ >>>detail.js로 따로 빼기
 
 7. 모든 페이지에 검색창 추가 ? !
 >>include/header.php에 추가!
