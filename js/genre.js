@@ -1,6 +1,4 @@
-$(function(){
-
-    
+$(function(){    
 
          // 장르별로 데이터 불러오기 함수 cf.recent.js
         function getGenre(gen, box, slideId){
@@ -22,7 +20,7 @@ $(function(){
                                                         <h3>${data.data.movies[i].title}</h3>
                                                         <p class="rating"><i class="fas fa-star">${data.data.movies[i].rating}</i></p>
                                                     </div>
-                                                    <a href="/movie_api/detail.html?id=${data.data.movies[i].id}">Detail</a>
+                                                    <a href="/movie_api/detail.php?id=${data.data.movies[i].id}">Detail</a>
                                                 </div>
                                             </div>
                                             <!-- end of slide box -->`;
