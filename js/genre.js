@@ -45,12 +45,20 @@ $(function(){
                     }
                     
                 });
+                // 새로고침할 때 로딩박스 show
+                $(".loadingBox").show();
 
         }
         // 실제 파라미터 적용
         getGenre('action','.actionCon','#actionSlide');
         getGenre('romance','.romanceCon','#romanceSlide');
         getGenre('drama','.dramaCon','#dramaSlide');
+
+
+        // loading box hide
+        $(document).ajaxComplete(function(){
+            $(".loadingBox").hide();
+        });
 
 
     

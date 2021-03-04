@@ -13,16 +13,18 @@ $(function(){
             // console.log(detailData.data.movie.cast[0].name);
 
             let castName = [];
-            for(let i=0; i < detailData.data.movie.cast.length; i++){
-                let castLi = `<b>${detailData.data.movie.cast[i].name +'</br>'}</b>`;
-                castName += castLi;
-
-                if(!detailData.data.movie.cast){
-                    castName = "No Actor";
+            // cast자체 데이터가 없음 -> cast == undefined
+            if(detailData.data.movie.cast == undefined){
+                castName = "";
+            } else {
+                for(let i=0; i < detailData.data.movie.cast.length; i++){
+                    let castLi = `<b>${detailData.data.movie.cast[i].name +'</br>'}</b>`;
+                    castName += castLi;          
                 }
             }
+            
 
-            console.log(castName);
+            console.log(detailData.data.movie.cast);
 
             //for(let i=0; i < detailData.data.movie.cast.length; i++){
                 // if(!detailData.data.movie.cast){

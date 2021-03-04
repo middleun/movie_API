@@ -9,7 +9,7 @@
 <div id="header">
 <div class="topNav">
     <ul>
-        <li class="active"><a href="./index.php">Home</a></li>
+        <li><a href="./index.php">Home</a></li>
         <li><a href="./recent.php">Latest</a></li>
         <li><a href="./genre.php">Genre</a></li>
         <li><a href="#">About</a></li>
