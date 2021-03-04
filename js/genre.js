@@ -6,7 +6,7 @@ $(function(){
         
                 $.ajax({
                     // '+gen+' 로 genre만 따로 분리
-                    url: 'https://yts.mx/api/v2/list_movies.json?genre='+gen+'&page=1&limit=15',
+                    url: 'https://yts.mx/api/v2/list_movies.json?genre='+gen+'&page=5&limit=15',
                     success : function(data){
                         console.log(data);
                         for(let i=0; i < data.data.movies.length; i++){
@@ -52,7 +52,9 @@ $(function(){
         // 실제 파라미터 적용
         getGenre('action','.actionCon','#actionSlide');
         getGenre('romance','.romanceCon','#romanceSlide');
-        getGenre('drama','.dramaCon','#dramaSlide');
+        getGenre('comedy','.comedyCon','#comedySlide');
+        getGenre('animation','.animationCon','#animationSlide');
+
 
 
         // loading box hide

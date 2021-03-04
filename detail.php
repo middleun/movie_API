@@ -33,6 +33,7 @@
             <?php include $_SERVER["DOCUMENT_ROOT"]. "./movie_api/include/header.php";?>    
             
             <div class="detailSec">
+                <span class="border"></span>
                 <!-- <div class="detailImg">
                     <img src="" alt="">
                 </div>
@@ -68,13 +69,15 @@
     
 
 
-    <-- jquery CDN link -->
+    <!-- <-- jquery CDN link  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
     
 
     <!-- detail page jQuery link -->
     <script src="./js/detail.js"></script>
+
+     
 
 </body>
 </html>

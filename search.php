@@ -59,11 +59,10 @@
 
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 
-    <!-- main jQuery link -->
-    <script src="./js/search.js"></script>
-
-
     
+
+    <!-- main jQuery link -->
+    <script src="./js/search.js"></script>   
        
 
    

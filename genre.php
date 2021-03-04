@@ -68,12 +68,18 @@
 
                 </div>
                 <!-- end of romance -->
-                <div class="drama genreBox">
-                    <div class="slideCon dramaCon" id="dramaSlide">
+                <div class="comedy genreBox">
+                    <div class="slideCon comedyCon" id="comedySlide">
                     </div>
 
                 </div>
-                <!-- end of drama -->
+                <!-- end of comedy -->
+                <div class="animation genreBox">
+                    <div class="slideCon animationCon" id="animationSlide">
+                    </div>
+
+                </div>
+                <!-- end of comedy -->
             </div>
            
           
@@ -91,9 +97,12 @@
     
     <!-- lightslider jQuery link -->
     <script src="./plugin/lightslider.js"></script>
-    
+
+        
     <!-- genre page jQuery link -->
     <script src="./js/genre.js"></script>
+
+    
 
     <!-- <script>
         $(function(){

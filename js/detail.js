@@ -13,7 +13,7 @@ $(function(){
             // console.log(detailData.data.movie.cast[0].name);
 
             let castName = [];
-            // cast자체 데이터가 없음 -> cast == undefined
+            // cast자체 데이터가 없음! so, cast == undefined
             if(detailData.data.movie.cast == undefined){
                 castName = "";
             } else {
@@ -24,7 +24,7 @@ $(function(){
             }
             
 
-            console.log(detailData.data.movie.cast);
+            console.log(detailData);
 
             //for(let i=0; i < detailData.data.movie.cast.length; i++){
                 // if(!detailData.data.movie.cast){
@@ -40,10 +40,10 @@ $(function(){
                                         <img src="${detailData.data.movie.medium_cover_image}" alt="">
                                     </div>
                                     <div class="detailInfo">
-                                        <h3>${detailData.data.movie.title}</h3>
+                                        <h3>${detailData.data.movie.title_long}</h3>
                                         <ul>
                                             
-                                            <li class="detailYear">${detailData.data.movie.year}</li>
+                                            <li class="detailYear"></li>
                                             <li class="detailCast"></li>
                                             <li class="detailGenre">${detailData.data.movie.genres}</li>
                                             <li class="detailRating"><i class="fas fa-star">${detailData.data.movie.rating}</i></li>

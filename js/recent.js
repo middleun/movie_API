@@ -59,6 +59,7 @@ $(function(){
             return false;
         }else{
             $(".recentMovieWrap").remove();
+            
             getData(b);
             $(".loadingBox").show();
             $(".numBtns button").removeClass("active");
