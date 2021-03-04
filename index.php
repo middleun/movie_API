@@ -7,16 +7,16 @@
     <title>FeelmSoGood</title>
 
     <!-- reset css link -->
-    <link rel="stylesheet" href="/movie_api/css/reset.css">
+    <link rel="stylesheet" href="./css/reset.css">
 
     <!-- style css link -->
-    <link rel="stylesheet" href="/movie_api/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 
     <!-- media css link -->
-    <link rel="stylesheet" href="/movie_api/css/media.css">
+    <link rel="stylesheet" href="./css/media.css">
 
     <!-- animation css link -->
-    <link rel="stylesheet" href="/movie_api/css/animation.css">
+    <link rel="stylesheet" href="./css/animation.css">
 
 
 
@@ -29,19 +29,13 @@
 <body>
     <div class="wrap">     
         <div class="center">     
-            <div id="header">
-                    <div class="topNav">
-                        <ul>
-                            <li><a href="/movie_api/index.html">Home</a></li>
-                            <li><a href="/movie_api/recent.html">Latest</a></li>
-                            <li><a href="/movie_api/genre.html">Genre</a></li>
-                            <li><a href="#">More</a></li>
-                        </ul>
-                    </div>
-            </div>       
+
+            <!-- header -->
+            <?php include $_SERVER["DOCUMENT_ROOT"]. "./movie_api/include/header.php";?>         
+           
         
             
-            
+            <!-- serach section -->
             <div class="searchSec">
                 <div class="quoteTxt">
                     <h2><i class="fas fa-quote-left"></i>Do The Next Right Thing<i class="fas fa-quote-right"></i></h2>
@@ -72,7 +66,7 @@
     <!-- jquery CDN link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <script src="/movie_api/js/recent.js"></script>
+    <script src="./js/recent.js"></script>
 
     <script>
         $(function(){
@@ -82,7 +76,7 @@
                     alert("검색어를 입력해주세요");
                     return false;
                 }
-                location.href="/movie_api/search.html?key=" + searchResult;
+                location.href="./search.php?key=" + searchResult;
             }
 
 

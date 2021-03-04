@@ -8,7 +8,7 @@ $(function(){
 
     $.ajax({
        type:"POST",
-       url:"../movie_api/data/api.php",
+       url:"./data/api.php",
        data: {
            search_value: decodeValue,
        },
@@ -19,7 +19,7 @@ $(function(){
 
             if(obj.items.length == 0){
                 alert("데이터가 없습니다");
-                location.href="/movie_api/index.html"
+                location.href="./index.php"
             }
             let itemContents =[];
             $.each(obj.items, function(i, item){
@@ -49,7 +49,7 @@ $(function(){
             $(".grid").append(itemContents);
 
             
-    
+            // masonry 적용
             $(".grid").imagesLoaded(function() {
                 // $(".grid").masonry('append', itemContents);
                 $('.grid').masonry({

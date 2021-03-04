@@ -7,32 +7,25 @@
     <title>FeelmSoGood search</title>
 
      <!-- reset css link -->
-     <link rel="stylesheet" href="/movie_api/css/reset.css">
+     <link rel="stylesheet" href="./css/reset.css">
 
      <!-- style css link -->
-     <link rel="stylesheet" href="/movie_api/css/style.css">
+     <link rel="stylesheet" href="./css/style.css">
 
      <!-- media css link -->
-    <link rel="stylesheet" href="/movie_api/css/media.css">
+    <link rel="stylesheet" href="./css/media.css">
  
      <!-- font awesome link -->
      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
 
 </head>
 <body>
-    <div class="wrap overlay">
+    <div class="wrap">
+        <div class="overlay"></div>
         <div class="center">
 
-            <div id="header">
-                <div class="topNav">
-                    <ul>
-                        <li><a href="/movie_api/index.html">Home</a></li>
-                        <li><a href="/movie_api/recent.html">Latest</a></li>
-                        <li><a href="#">Genre</a></li>
-                        <li><a href="#">More</a></li>
-                    </ul>
-                </div>
-            </div>       
+            <!-- header -->
+            <?php include $_SERVER["DOCUMENT_ROOT"]. "./movie_api/include/header.php";?>  
             
             <div class="grid clear">
                 <div class="gridSizer"></div>
@@ -67,7 +60,7 @@
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 
     <!-- main jQuery link -->
-    <script src="/movie_api/js/search.js"></script>
+    <script src="./js/search.js"></script>
 
 
     

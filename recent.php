@@ -7,16 +7,16 @@
     <title>FeelmSoGood</title>
 
     <!-- reset css link -->
-    <link rel="stylesheet" href="/movie_api/css/reset.css">
+    <link rel="stylesheet" href="./css/reset.css">
 
     <!-- style css link -->
-    <link rel="stylesheet" href="/movie_api/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 
     <!-- media css link -->
-    <link rel="stylesheet" href="/movie_api/css/media.css">
+    <link rel="stylesheet" href="./css/media.css">
 
     <!-- animation css link -->
-    <link rel="stylesheet" href="/movie_api/css/animation.css">
+    <link rel="stylesheet" href="./css/animation.css">
 
 
 
@@ -27,22 +27,16 @@
 
 </head>
 <body>
-    <div class="wrap">     
+    <div class="wrap">    
+        <div class="overlay"></div> 
         <div class="center">     
-            <div id="header">
-                <div class="topNav">
-                    <ul>
-                        <li><a href="/movie_api/index.html">Home</a></li>
-                        <li><a href="/movie_api/recent.html">Latest</a></li>
-                        <li><a href="#">Genre</a></li>
-                        <li><a href="#">More</a></li>
-                    </ul>
-                </div>
-            </div>       
+            
+            <!-- header -->
+            <?php include $_SERVER["DOCUMENT_ROOT"]. "./movie_api/include/header.php";?>  
             
             
             <div class="loadingBox">
-                <img src="/movie_api/img/loading.gif" alt="">
+                <img src="./img/loading_7.gif" alt="">
             </div>          
 
             
@@ -81,7 +75,7 @@
     <!-- jquery CDN link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <script src="/movie_api/js/recent.js"></script>
+    <script src="../movie_api/js/recent.js"></script>
 
     <script>
         $(function(){

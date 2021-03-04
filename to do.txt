@@ -15,18 +15,24 @@
 3. tint
 #D1B9BA
 
+#B28B8C
+
 
 
 
 **to do
 1. 메인페이지 ui 변경✔
 2. 헤더 작업✔
-3. 영화 이미지 클릭시 링크 연결✔
-4. 로딩 gif 디자인 변경
-5. search result page 헤더,그리드 수정 
+3. 검색결과페이지 영화 이미지 클릭시 링크 연결✔
+4. loadingbox gif 디자인 변경
+5. search result page 헤더,그리드 위치 수정✔ 
 6. 메뉴 클릭 이벤트
-7. php변경
-8. 헤더 include로 포함/ 링크 연결
+7. php변경✔
+8. 헤더 include로 포함/ 링크 연결✔
+9. genre페이지 loading box추가
+10.genre페이지 탭버튼
+11. 상세페이지 
+>>이미지 찾기 
 
-
-7. 모든 페이지에 검색창 추가 ? 
+7. 모든 페이지에 검색창 추가 ? !
+>>include/header.php에 추가!

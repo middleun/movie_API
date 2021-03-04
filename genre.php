@@ -7,19 +7,19 @@
     <title>FeelmSoGood</title>
 
     <!-- reset css link -->
-    <link rel="stylesheet" href="/movie_api/css/reset.css">
+    <link rel="stylesheet" href="./css/reset.css">
 
     <!-- light slider css link -->
-    <link rel="stylesheet" href="/movie_api/plugin/lightslider.css">
+    <link rel="stylesheet" href="./plugin/lightslider.css">
 
     <!-- style css link -->
-    <link rel="stylesheet" href="/movie_api/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 
     <!-- media css link -->
-    <link rel="stylesheet" href="/movie_api/css/media.css">
+    <link rel="stylesheet" href="./css/media.css">
 
     <!-- animation css link -->
-    <link rel="stylesheet" href="/movie_api/css/animation.css">
+    <link rel="stylesheet" href="./css/animation.css">
 
 
     <!-- font awesome link -->
@@ -31,22 +31,17 @@
 
 </head>
 <body>
-    <div class="wrap">     
+    <div class="wrap">  
+        <div class="overlay"></div>   
         <div class="center">     
-            <div id="header">
-                    <div class="topNav">
-                        <ul>
-                            <li><a href="/movie_api/index.html">Home</a></li>
-                            <li><a href="/movie_api/recent.html">Latest</a></li>
-                            <li><a href="/movie_api/genre.html">Genre</a></li>
-                            <li><a href="#">More</a></li>
-                        </ul>
-                    </div>
-            </div>       
+            
+            <!-- header -->
+            <?php include $_SERVER["DOCUMENT_ROOT"]. "./movie_api/include/header.php";?>  
         
             
             <div class="genreSec">
                 <div class="action genreBox">
+                    
                     <div class="slideCon actionCon" id="actionSlide">
                         <!-- <div class="slideBox">
                             <div>
@@ -66,12 +61,16 @@
                 <!-- end of action -->
                 <div class="romance genreBox">
                     <div class="slideCon romanceCon" id="romanceSlide">
+                    </div>
 
                 </div>
+                <!-- end of romance -->
                 <div class="drama genreBox">
                     <div class="slideCon dramaCon" id="dramaSlide">
+                    </div>
 
                 </div>
+                <!-- end of drama -->
             </div>
            
           
@@ -88,10 +87,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
     <!-- lightslider jQuery link -->
-    <script src="/movie_api/plugin/lightslider.js"></script>
+    <script src="./plugin/lightslider.js"></script>
     
     <!-- genre page jQuery link -->
-    <script src="/movie_api/js/genre.js"></script>
+    <script src="./js/genre.js"></script>
 
     <!-- <script>
         $(function(){
