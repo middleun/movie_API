@@ -37,6 +37,10 @@
 
     #header .topNav ul li a{font-size:16px;}
 
+    .searchSec .quoteTxt h2{font-size: 30px; transition:all 0.4s linear;}
+    .searchSec .searchBox .searchInput{width:400px; height:60px; transition:all 0.4s linear;}
+
+
     .recentSec .movieContainer .recentMovieWrap{width:20%;}
     .recentSec .movieContainer .recentMovieWrap:nth-child(9),
     .recentSec .movieContainer .recentMovieWrap:nth-child(10){display:none;}
@@ -55,7 +59,6 @@
     .genreSec .genrePan .genreBox .slideBox>div .slideTxt h3{font-size:14px;}
 
 
-    .searchSec .searchBox .searchInput{width:400px; _height:30px; transition:all 0.4s linear;}
 
 
     /* .detailSec .detailUp .detailImg{float:none; width:100%; height:30%;}
@@ -95,8 +98,8 @@
 }
 
 @media screen and (max-width:500px){
-    .searchSec .quoteTxt h2{font-size: 20px; transition:all 0.4s linear;}
-    .searchSec .quoteTxt h2 i{font-size: 20px; transition:all 0.4s linear;}
+    .searchSec .quoteTxt h2{_font-size: 20px; transition:all 0.4s linear;}
+    .searchSec .quoteTxt h2 i{_font-size: 20px; transition:all 0.4s linear;}
 
 }    
 

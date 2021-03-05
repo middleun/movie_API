@@ -36,7 +36,7 @@
         <div class="center">     
             
             <!-- header -->
-            <?php include $_SERVER["DOCUMENT_ROOT"]. "./movie_api/include/header.php";?>  
+            <?php include $_SERVER["DOCUMENT_ROOT"]. "/movie_api/include/header.php";?>  
 
             
         

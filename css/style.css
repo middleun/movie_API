@@ -10,7 +10,7 @@
 .searchSec{width:100%; height:80%; display:flex; justify-content: center; align-items: center; flex-direction: column;
  _position:relative; }
 .searchSec .quoteTxt{width:100%; text-align:center; margin:0 50px 10px 0; } 
-.searchSec .quoteTxt h2{color:#fff; font-size:30px; font-weight: 500; display:flex; flex-direction: row; justify-content: center;
+.searchSec .quoteTxt h2{color:#fff; font-size:40px; font-weight: 500; display:flex; flex-direction: row; justify-content: center;
 align-items: center;}
 .searchSec .quoteTxt h2 i{display:block; font-size:30px; color:rgba(255, 255, 255, 0.575);}
 .searchSec .quoteTxt h2 i:nth-child(1){margin-right:20px;}
@@ -18,7 +18,7 @@ align-items: center;}
 
 /* search Box */
 .searchSec .searchBox{display:flex; justify-content: center; align-items: center;}
-.searchSec .searchBox .searchInput{width:500px; height:50px; padding:10px; border:none; display: inline-block;
+.searchSec .searchBox .searchInput{width:500px; height:70px; padding:10px; border:none; display: inline-block;
 border-radius: 20px; color:#393631; font-size:16px; transition:all 0.4s linear;}
 .searchSec .searchBox .searchInput::placeholder{font-family:"Work Sans"; font-size:16px;color:#fff;}
 
@@ -29,8 +29,8 @@ background-color: #fff; border: 3px solid #D1B9BA; }
 .searchSec .searchBox .searchInput.focusEvent:focus::after {-webkit-transform: translate3d(0, 100%, 0);transform: translate3d(0, 100%, 0); }
 .searchSec .searchBox .searchInput.focusEvent:focus::placeholder{color:#fff;}
 
-.searchSec .searchBox button{width:50px; height:50px; border:none; margin-left:10px; background:none; border-radius: 20px; transition:all 0.4s linear;}
-.searchSec .searchBox button i{color:#D1B9BA; font-size:30px; cursor: pointer;}
+.searchSec .searchBox button{width:70px; height:70px; border:none; margin-left:10px; background:none; border-radius: 20px; transition:all 0.4s linear;}
+.searchSec .searchBox button i{color:#D1B9BA; font-size:40px; cursor: pointer;}
 .searchSec .searchBox button:hover{transform: scale(1.2); }
 .searchSec .searchBox button:hover i{color:#F0E8E8;}
 
