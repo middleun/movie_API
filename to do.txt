@@ -33,24 +33,28 @@
 8. 헤더 include로 포함/ 링크 연결✔
 9. genre페이지 수정 
    - loading box추가✔
-   - 🔷genre 탭버튼
+   - genre 탭- 패널 연결✔
+   - 탭버튼 ui✔
+   - 탭 활성화시 여백 조절✔
    - detail 버튼 변경 (like search result page/이미지 호버 효과로)✔
-   - 🔷컨트롤 버튼
+   - 🔷컨트롤 버튼(시간 되면)
 10. detail페이지 
    - 배경 이미지 찾기 
    - 상세 데이터 불러오기, 연결✔
-   - 🔷data가 다 안 맞을 경우?? 
+   - data가 다 안 맞을 경우?? 
       ex.cast 정보가 없을 때-?????????????????✔ -> 반복문 안에 if를 넣지 말고 if,else문 안에 반복문을 넣기!!!!
       ex.cast 정보가 많을 때✔ -> 반복문으로 해결
    - ui변경 
    - movie suggestion 추가?(시간 되면) 
-   - 🔷반응형
+   - 🔷반응형-ing
    - screen shot 클릭시 팝업으로 이미지 확대
    - description 자르기
    - 목록으로 돌아가기 버튼
  >>>detail.js로 따로 빼기✔
 
 11. 🔷overlay 꽉차게
+12. 각 section마다 center
+13. section class->id
  
 
 *. 모든 페이지에 검색창 추가 ? !

@@ -1,5 +1,23 @@
 $(function(){    
 
+
+        // genre tab activate
+
+        $(".genreTab button").click(function(){ 
+                      
+            $(".genreTab button").removeClass("active");
+            $(this).addClass("active");     
+           
+            let gerIdx=$(this).index();
+            // console.log(gerIdx);
+                                    
+            $(".genrePan .genreBox").hide();       
+            $(".genrePan .genreBox").eq(gerIdx).show();
+            $(".genrePan").css("margin","20% auto");
+
+
+        });
+       
          // 장르별로 데이터 불러오기 함수 cf.recent.js
         function getGenre(gen, box, slideId){
                 let getGenre = [];
@@ -45,7 +63,32 @@ $(function(){
                             auto:true,
                             loop:true,
                             speed:400,
-                            pager:true
+                            pager:true,
+                            responsive : [
+                                {
+                                    breakpoint:1024,
+                                    settings: {
+                                        item:4,
+                                        slideMove:1,
+                                        // slideMargin:6
+                                      }
+                                },
+                                {
+                                    breakpoint:850,
+                                    settings: {
+                                        item:3,
+                                        slideMove:1,
+                                        // slideMargin:6
+                                      }
+                                },
+                                {
+                                    breakpoint:500,
+                                    settings: {
+                                        item:2,
+                                        slideMove:1
+                                      }
+                                }
+                            ]
                         });  
                     }
                     

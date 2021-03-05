@@ -37,50 +37,66 @@
             
             <!-- header -->
             <?php include $_SERVER["DOCUMENT_ROOT"]. "./movie_api/include/header.php";?>  
+
+            
         
             <div class="loadingBox">
                 <img src="./img/loading_8.gif" alt="">
             </div>          
             
             <div class="genreSec">
-                <div class="action genreBox">
-                    
-                    <div class="slideCon actionCon" id="actionSlide">
-                        <!-- <div class="slideBox">
-                            <div>
-                                <img src="/movie_api/img/sample.jpg" alt="">
-                                <div class="slideTxt">
-                                    <h3>Title</h3>
-                                    <p class="rating"></p>
-                                </div>
-                                <a href="#">Detail</a>
-                            </div>
-                        </div>
-                        end of slide box -->
+                <div class="genreTab">
+                    <!-- <button type="button" class="all"><span>All</span></button> -->
+                    <button type="button" class="action"><span>Action</span></button>
+                    <button type="button" class="romance"><span>Romance</span></button>
+                    <button type="button" class="comedy"><span>Comedy</span></button>
+                    <button type="button" class="animation"><span>Animation</span></button>
+                </div>
+                <!-- end of genre Tab -->
+
+                <div class="genrePan">
+                    <div class="action genreBox">
                         
+                        <div class="slideCon actionCon" id="actionSlide">
+                            <!-- <div class="slideBox">
+                                <div>
+                                    <img src="/movie_api/img/sample.jpg" alt="">
+                                    <div class="slideTxt">
+                                        <h3>Title</h3>
+                                        <p class="rating"></p>
+                                    </div>
+                                    <a href="#">Detail</a>
+                                </div>
+                            </div>
+                            end of slide box -->
+                            
+                        </div>
+                        <!-- end of slideCon -->
                     </div>
-                    <!-- end of slideCon -->
-                </div>
-                <!-- end of action -->
-                <div class="romance genreBox">
-                    <div class="slideCon romanceCon" id="romanceSlide">
+                    <!-- end of action -->
+                    <div class="romance genreBox">
+                        <div class="slideCon romanceCon" id="romanceSlide">
+                        </div>
+
                     </div>
+                    <!-- end of romance -->
+                    <div class="comedy genreBox">
+                        <div class="slideCon comedyCon" id="comedySlide">
+                        </div>
+
+                    </div>
+                    <!-- end of comedy -->
+                    <div class="animation genreBox">
+                        <div class="slideCon animationCon" id="animationSlide">
+                        </div>
+
+                    </div>
+                    <!-- end of comedy -->
 
                 </div>
-                <!-- end of romance -->
-                <div class="comedy genreBox">
-                    <div class="slideCon comedyCon" id="comedySlide">
-                    </div>
-
-                </div>
-                <!-- end of comedy -->
-                <div class="animation genreBox">
-                    <div class="slideCon animationCon" id="animationSlide">
-                    </div>
-
-                </div>
-                <!-- end of comedy -->
+                <!-- end of genre panel -->
             </div>
+            <!-- end of genre section -->
            
           
 

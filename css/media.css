@@ -1,10 +1,19 @@
 @media screen and (max-width:1280px){
-.center{max-width:900px;}
+.center{max-width:1000px;}
+
+
+.recentSec .movieContainer .recentMovieWrap h3{font-size:14px;}
 
 .grid{transform:translateX(-48%);}
 .grid .gridSizer{width:33.333%;}
 .grid .gridItem{width:25%;}
 /* .grid .gridItem{width:20%; height:auto;position:relative; _float:left; background:none; margin:20px;} */
+
+/* .detailSec .detailUp .detailImg{width:40%;}
+.detailSec .detailUp .detailInfo{width:60%;}
+.detailSec .detailUp .detailTxt{width:60%;} */
+
+
 
 
 
@@ -12,6 +21,13 @@
 
 @media screen and (max-width:1024px){
     .center{max-width:800px;}
+
+
+    .genreSec .genreTab button{font-size:14px;}
+
+    .detailSec .detailUp{height:60%;}
+    .detailSec .detailDown{height:40%;}
+
 
 }    
 
@@ -21,7 +37,10 @@
 
     #header .topNav ul li a{font-size:16px;}
 
-    .recentSec .movieContainer .recentMovieWrap{width:23%;}
+    .recentSec .movieContainer .recentMovieWrap{width:20%;}
+    .recentSec .movieContainer .recentMovieWrap:nth-child(9),
+    .recentSec .movieContainer .recentMovieWrap:nth-child(10){display:none;}
+
 
     .grid{transform:translateX(-47%);}
     .grid .gridSizer{width:25%;}
@@ -29,15 +48,32 @@
 
     .grid .gridItem .conBox .txtBox h2{font-size:16px;}    
 
+    /* genre section */
+    .genreSec .genreTab{width:60%;transition: all 0.4s linear;}
+    .genreSec .genreTab button{font-size:12px;}
+
+    .genreSec .genrePan .genreBox .slideBox>div .slideTxt h3{font-size:14px;}
+
+
     .searchSec .searchBox .searchInput{width:400px; _height:30px; transition:all 0.4s linear;}
+
+
+    /* .detailSec .detailUp .detailImg{float:none; width:100%; height:30%;}
+    .detailSec .detailUp .detailImg img{width:100%;height:none;}
+    .detailSec .detailUp .detailInfo{float:none; width:100%; height:20%;}
+    .detailSec .detailUp .detailTxt{float:none; width:100%; height:50%;} */
+
+
         
 }
 
 @media screen and (max-width:650px){
-    .center{max-width:500px;}
+    .center{max-width:400px;}
 
-    .searchSec .quoteTxt h2{font-size: 25px; transition:all 0.4s linear;}
-    .searchSec .quoteTxt h2 i{font-size: 25px; transition:all 0.4s linear;}
+   
+
+    .searchSec .quoteTxt h2{font-size: 23px; transition:all 0.4s linear;}
+    .searchSec .quoteTxt h2 i{font-size: 23px; transition:all 0.4s linear;}
     .searchSec .searchBox .searchInput{width:350px; _height:40px;}
 
     .grid{transform:translateX(-40%);}
@@ -48,5 +84,20 @@
     .grid .gridItem .conBox .txtBox .date,
     .grid .gridItem .conBox .txtBox .rating{display:none;}
 
+    /* genre section */
+    .genreSec .genreTab{width:100%;}
+
+    /* .genreSec .genrePan .genreBox .slideBox>div .slideTxt h3{font-size:12px;}
+    .genreSec .genrePan .genreBox .slideBox>div .slideTxt p{font-size:12px;} */
+
+
     
 }
+
+@media screen and (max-width:500px){
+    .searchSec .quoteTxt h2{font-size: 20px; transition:all 0.4s linear;}
+    .searchSec .quoteTxt h2 i{font-size: 20px; transition:all 0.4s linear;}
+
+}    
+
+
