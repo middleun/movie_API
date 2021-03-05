@@ -6,7 +6,7 @@ $(function(){
         
                 $.ajax({
                     // '+gen+' 로 genre만 따로 분리
-                    url: 'https://yts.mx/api/v2/list_movies.json?genre='+gen+'&page=5&limit=15',
+                    url: 'https://yts.mx/api/v2/list_movies.json?genre='+gen+'&page=10&limit=15',
                     success : function(data){
                         console.log(data);
                         for(let i=0; i < data.data.movies.length; i++){
@@ -15,12 +15,17 @@ $(function(){
                             // }
                             let genreHTML=  `<div class="slideBox">
                                                 <div>
-                                                    <img src="${data.data.movies[i].medium_cover_image}" alt="">
+                                                    <div class="slideImg">
+                                                        <img src="${data.data.movies[i].medium_cover_image}" alt="">
+                                                        <div class="moreBox">
+                                                            <a href="/movie_api/detail.php?id=${data.data.movies[i].id}"><i class="fas fa-search"></i></a>
+                                                        </div>
+                                                    </div>    
                                                     <div class="slideTxt">
                                                         <h3>${data.data.movies[i].title}</h3>
-                                                        <p class="rating"><i class="fas fa-star">${data.data.movies[i].rating}</i></p>
+                                                        <p class="rating"><i class="fas fa-star">  ${data.data.movies[i].rating}</i></p>
                                                     </div>
-                                                    <a href="/movie_api/detail.php?id=${data.data.movies[i].id}">Detail</a>
+                                                   
                                                 </div>
                                             </div>
                                             <!-- end of slide box -->`;

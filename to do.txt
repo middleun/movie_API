@@ -34,8 +34,8 @@
 9. genre페이지 수정 
    - loading box추가✔
    - 🔷genre 탭버튼
-   - 🔷detail 변경 (like search result page)
-   - 컨트롤 버튼
+   - detail 버튼 변경 (like search result page/이미지 호버 효과로)✔
+   - 🔷컨트롤 버튼
 10. detail페이지 
    - 배경 이미지 찾기 
    - 상세 데이터 불러오기, 연결✔
@@ -50,7 +50,7 @@
    - 목록으로 돌아가기 버튼
  >>>detail.js로 따로 빼기✔
 
-11. overlay 꽉차게
+11. 🔷overlay 꽉차게
  
 
 *. 모든 페이지에 검색창 추가 ? !

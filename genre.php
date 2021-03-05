@@ -39,7 +39,7 @@
             <?php include $_SERVER["DOCUMENT_ROOT"]. "./movie_api/include/header.php";?>  
         
             <div class="loadingBox">
-                <img src="./img/loading_7.gif" alt="">
+                <img src="./img/loading_8.gif" alt="">
             </div>          
             
             <div class="genreSec">

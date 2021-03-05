@@ -36,7 +36,7 @@
             
             
             <div class="loadingBox">
-                <img src="./img/loading_7.gif" alt="">
+                <img src="./img/loading_8.gif" alt="">
             </div>          
 
             

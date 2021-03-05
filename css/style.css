@@ -8,7 +8,7 @@
 
 /***** search section style *****/
 .searchSec{width:100%; height:80%; display:flex; justify-content: center; align-items: center; flex-direction: column;
- _position:absolute; }
+ _position:relative; }
 .searchSec .quoteTxt{width:100%; text-align:center; margin:0 50px 10px 0; } 
 .searchSec .quoteTxt h2{color:#fff; font-size:30px; font-weight: 500; display:flex; flex-direction: row; justify-content: center;
 align-items: center;}
@@ -18,7 +18,7 @@ align-items: center;}
 
 /* search Box */
 .searchSec .searchBox{display:flex; justify-content: center; align-items: center;}
-.searchSec .searchBox .searchInput{width:500px; height:40px; padding:10px; border:none; display: inline-block;
+.searchSec .searchBox .searchInput{width:500px; height:50px; padding:10px; border:none; display: inline-block;
 border-radius: 20px; color:#393631; font-size:16px; transition:all 0.4s linear;}
 .searchSec .searchBox .searchInput::placeholder{font-family:"Work Sans"; font-size:16px;color:#fff;}
 
@@ -41,14 +41,15 @@ background-color: #fff; border: 3px solid #D1B9BA; }
 /********************
  LATEST page style 
  *********************/
-.recentSec{width:100%; height:80%; margin:auto; max-width:1100px;position:relative; _display:flex; _justify-content: _center; flex-direction: column;}
-.recentSec .movieContainer{_position:absolute;width:100%; height:auto; }
+.recentSec{width:100%; height:80%; margin:auto; _max-width:1100px;position:relative; display:flex; justify-content: center; flex-direction: column;
+}
+.recentSec .movieContainer{_position:absolute;width:100%; height:auto; display:flex; flex-wrap: wrap; justify-content: center;}
 .recentSec .movieContainer .recentMovieWrap{float:left; width:17%; padding:10px; border-radius: 20px;}
 .recentSec .movieContainer .recentMovieWrap img{width:100%;border-radius: 20px;}
 .recentSec .movieContainer .recentMovieWrap h3{margin-top:5px; text-align:center;font-size:16px; white-space: nowrap; 
 text-overflow:ellipsis; width:100%; overflow: hidden; color:#fff; font-weight: 400;}
 
-.recentSec .numContainer{width:100%; height:auto; margin: auto; max-width: 1100px; margin:20px auto 50px; display:flex; 
+.recentSec .numContainer{width:100%; height:auto; margin-top:20px; display:flex; 
 justify-content: center; align-items: center; }
 .recentSec .numContainer .numBtns button{border:none; width:30px; height: 30px; font-weight: 600; border-radius: 10px;
 background:#fff;cursor:pointer;}
@@ -93,22 +94,37 @@ color:#651619; text-overflow:ellipsis; width:100%;}
 genre page style 
  *********************/
 .genreSec{width:100%; max-width:980px;height: auto; margin:auto;_padding:50px; } 
-.genreSec>div{margin:30px 0; background:#fff; border-radius: 20px;}
+.genreSec>div{margin:30px 0; background:#fff; border-radius: 20px;box-sizing: border-box;
+padding:5px;}
 .genreSec .genreBox{width:100%;height: 100%;display:flex; flex-direction: column;}
-.genreSec .genreBox .slideBox{width:250px; height:auto; padding:10px;}
+.genreSec .genreBox .slideBox{width:250px; height:auto; padding:10px;border:2px solid #651619; border-radius: 20px;
+_box-sizing: border-box; padding:5px; border-bottom: 5px solid #651619;}
 .genreSec .genreBox .slideBox>div{width:100%; height:100%;}
-.genreSec .genreBox .slideBox>div img{width:100%; border-radius: 20px;}
-.genreSec .genreBox .slideBox>div .slideTxt{color:#651619; margin-top:20px; _text-align:justify;}
-.genreSec .genreBox .slideBox>div .slideTxt h3{font-weight: 500; font-size: 18px;}
-.genreSec .genreBox .slideBox>div .slideTxt p{font-weight:400;font-size:14px; color:#B28B8C;margin-top:10px;}
+.genreSec .genreBox .slideBox>div .slideImg{width:100%; height:70%;position:relative; transition: all 0.4s linear;
+border-radius: 20px; overflow: hidden;}
+.genreSec .genreBox .slideBox>div img{width:100%; _border-radius: 20px;}
+.genreSec .genreBox .slideBox>div .slideTxt{width:100%; height:30%;; margin-top:18px; text-align:center; padding:5px;}
+.genreSec .genreBox .slideBox>div .slideTxt h3{color:#651619;font-weight: 600; font-size: 16px;white-space: nowrap; text-overflow:ellipsis; overflow: hidden;}
+.genreSec .genreBox .slideBox>div .slideTxt p{font-weight:400;font-size:14px; color:#393631;margin-top:10px;}
+.genreSec .genreBox .slideBox>div .slideTxt p i{display:block; margin-right: 5px;}
 
+/* more box style */
+.genreSec .genreBox .slideBox>div .slideImg .moreBox{width:100%; height:100%;position:absolute; display:flex; justify-content: center; align-items: center; 
+border:none;border-radius: 20px; opacity:0; transition: all 0.4s ease-in-out; z-index:999;left: 0;top: 0;}
+.genreSec .genreBox .slideBox>div .slideImg .moreBox a{display:flex; justify-content: center; align-items: center;width:50px; height:50px;
+color:#fff;}
+.genreSec .genreBox .slideBox>div .slideImg .moreBox a i{font-size:50px;}
+
+.genreSec .genreBox .slideBox>div .slideImg:hover{transform:scale(1.02);}
+.genreSec .genreBox .slideBox>div .slideImg:hover .moreBox{opacity: 1; background:#6516197a; border:none;}
+.genreSec .genreBox .slideBox>div .slideImg:hover .moreBox a{color:#fff; width:100%;}
 
 /********************
 detail page style 
 *********************/
-.detailSec{width:100%; height:auto;  _background:#fff; display: flex; flex-direction: column; justify-content: center;
+.detailSec{width:100%; height:800px;  _background:#fff; display: flex; flex-direction: column; justify-content: center;
 border-radius: 20px; overflow: hidden; position:relative; margin:30px 0;}
-.detailSec .border{display:block; position:absolute;width:98%;  height:97%;border-radius: 20px; border:1.5px solid #651619;
+.detailSec .border{display:block; position:absolute;width:98%;  height:97%;border-radius: 20px; border:2px dashed #651619;
 margin:auto; left:50%; top:1%;transform: translateX(-50%); }
 
 /* detail up */
