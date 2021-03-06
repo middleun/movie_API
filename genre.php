@@ -51,6 +51,11 @@
                     <button type="button" class="romance"><span>Romance</span></button>
                     <button type="button" class="comedy"><span>Comedy</span></button>
                     <button type="button" class="animation"><span>Animation</span></button>
+                    <button type="button" class="sci-fi"><span>sci-fi</span></button>
+                    <button type="button" class="thriller"><span>thriller</span></button>
+                    <button type="button" class="mystery"><span>mystery</span></button>
+                    <button type="button" class="adventure"><span>Adventure</span></button>
+
                 </div>
                 <!-- end of genre Tab -->
 
@@ -98,7 +103,32 @@
                         </div>
 
                     </div>
-                    <!-- end of comedy -->
+                    <!-- end of animation -->
+                    <div class="sci-fi genreBox">
+                        <div class="slideCon sci-fiCon" id="sci-fiSlide">
+                        </div>
+
+                    </div>
+                    <!-- end of sci-fi -->
+                    <div class="thriller genreBox">
+                        <div class="slideCon thrillerCon" id="thrillerSlide">
+                        </div>
+
+                    </div>
+                    <!-- end of thriller -->
+                    <div class="mystery genreBox">
+                        <div class="slideCon mysteryCon" id="mysterySlide">
+                        </div>
+
+                    </div>
+                    <!-- end of mystery -->
+                    <div class="adventure genreBox">
+                        <div class="slideCon adventureCon" id="adventureSlide">
+                        </div>
+
+                    </div>
+                    <!-- end of adventure -->
+
 
                 </div>
                 <!-- end of genre panel -->

@@ -8,7 +8,7 @@ $(function(){
         
                 $.ajax({
                     // '+gen+' 로 genre만 따로 분리
-                    url: 'https://yts.mx/api/v2/list_movies.json?genre='+gen+'&page=10&limit=15',
+                    url: 'https://yts.mx/api/v2/list_movies.json?genre='+gen+'&page=10&limit=10',
                     success : function(data){
                         console.log(data);
                         for(let i=0; i < data.data.movies.length; i++){
@@ -82,7 +82,7 @@ $(function(){
 
         }
 
-        let getGenres = ['all', 'action', 'romance', 'comedy', 'animation'];
+        let getGenres = ['all', 'action', 'romance', 'comedy', 'animation', 'sci-fi', 'thriller', 'mystery', 'adventure'];
 
         for (let i = 0; i < getGenres.length; i++){   
             getGenre(getGenres[i], '.' + getGenres[i] + 'Con', '#'+getGenres[i] + 'Slide');
@@ -102,7 +102,7 @@ $(function(){
             $(this).addClass("active");  
             
             if(this.innerTxt == "All"){
-                $(".genrePan").show();
+                $(".genrePan .genreBox").show();
             }else{
                 let gerIdx=$(this).index();
                 // console.log(gerIdx);
