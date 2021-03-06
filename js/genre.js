@@ -1,26 +1,10 @@
-$(function(){    
+$(function(){     
 
-
-        // genre tab activate
-
-        $(".genreTab button").click(function(){ 
-                      
-            $(".genreTab button").removeClass("active");
-            $(this).addClass("active");     
-           
-            let gerIdx=$(this).index();
-            // console.log(gerIdx);
-                                    
-            $(".genrePan .genreBox").hide();       
-            $(".genrePan .genreBox").eq(gerIdx).show();
-            $(".genrePan").css("margin","20% auto");
-
-
-        });
+       
        
          // 장르별로 데이터 불러오기 함수 cf.recent.js
         function getGenre(gen, box, slideId){
-                let getGenre = [];
+                let getGenres = [];
         
                 $.ajax({
                     // '+gen+' 로 genre만 따로 분리
@@ -48,10 +32,10 @@ $(function(){
                                             </div>
                                             <!-- end of slide box -->`;
 
-                                    getGenre += genreHTML;            
+                                    getGenres += genreHTML;            
                         }
                         // actionCon, romanceCon->box로 파라미터 정리
-                        $(box).append(getGenre);
+                        $(box).append(getGenres);
                         // console.log(data.data.movies[0].title);
 
                         // lightslider 적용
@@ -97,11 +81,39 @@ $(function(){
                 $(".loadingBox").show();
 
         }
-        // 실제 파라미터 적용
-        getGenre('action','.actionCon','#actionSlide');
-        getGenre('romance','.romanceCon','#romanceSlide');
-        getGenre('comedy','.comedyCon','#comedySlide');
-        getGenre('animation','.animationCon','#animationSlide');
+
+        let getGenres = ['all', 'action', 'romance', 'comedy', 'animation'];
+
+        for (let i = 0; i < getGenres.length; i++){   
+            getGenre(getGenres[i], '.' + getGenres[i] + 'Con', '#'+getGenres[i] + 'Slide');
+        }
+
+        // // 실제 파라미터 적용
+        // getGenre('action','.actionCon','#actionSlide');
+        // getGenre('romance','.romanceCon','#romanceSlide');
+        // getGenre('comedy','.comedyCon','#comedySlide');
+        // getGenre('animation','.animationCon','#animationSlide');
+
+
+        // genre tab activate
+        $(".genreTab button").click(function(){ 
+                      
+            $(".genreTab button").removeClass("active");
+            $(this).addClass("active");  
+            
+            if(this.innerTxt == "All"){
+                $(".genrePan").show();
+            }else{
+                let gerIdx=$(this).index();
+                // console.log(gerIdx);
+                                        
+                $(".genrePan .genreBox").hide();       
+                $(".genrePan .genreBox").eq(gerIdx).show();
+                $(".genrePan").css("margin","10px auto");
+
+            }    
+       
+        });
 
 
 

@@ -46,7 +46,7 @@
             
             <div class="genreSec">
                 <div class="genreTab">
-                    <!-- <button type="button" class="all"><span>All</span></button> -->
+                    <button type="button" class="all"><span>All</span></button>
                     <button type="button" class="action"><span>Action</span></button>
                     <button type="button" class="romance"><span>Romance</span></button>
                     <button type="button" class="comedy"><span>Comedy</span></button>
@@ -55,7 +55,14 @@
                 <!-- end of genre Tab -->
 
                 <div class="genrePan">
+                    <div class="all genreBox">
+                        <div class="slideCon allCon" id="allSlide">
+                        </div>
+
+                    </div>
                     <div class="action genreBox">
+                    
+                        
                         
                         <div class="slideCon actionCon" id="actionSlide">
                             <!-- <div class="slideBox">
