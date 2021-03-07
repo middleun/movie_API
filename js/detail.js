@@ -24,7 +24,7 @@ $(function(){
             }
             
 
-            console.log(detailData);
+            // console.log(detailData);
 
             //for(let i=0; i < detailData.data.movie.cast.length; i++){
                 // if(!detailData.data.movie.cast){
@@ -88,6 +88,43 @@ $(function(){
        
 
     });
+
+    // cutting txt on detailTxt
+        // cutting text each boxes
+        let desTxt = $(".txtBox");
+
+        
+            // let allTxt = detailTxt.find(".detailDes").text();
+
+        
+            function cutTxt() {
+                let txtHeight = $(".detailTxt").height();
+                let desHeight = $(desTxt).height();
+
+            console.log(txtHeight, desHeight);
+
+                
+            }
+                    // if(desHeight > txtHeight){
+
+                    // }
+
+        //         if (txtWidth < 800) {
+        //             mainWebBox.eq(i).find(".cutTxt").text(allTxt.substr(0, 20) + '...');
+        
+        //         } else {
+        //             mainWebBox.eq(i).find(".cutTxt").text(allTxt.substr(0, 40) + '...');
+        
+        //         }
+        //     }
+
+        //    $(window).resize(function () {
+        //        cutTxt()
+       
+        //    });
+        //    cutTxt()
+
+          
 
 
 
