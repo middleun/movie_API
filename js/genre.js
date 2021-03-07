@@ -47,6 +47,7 @@ $(function(){
                             auto:true,
                             loop:true,
                             speed:400,
+                            controls:true,
                             pager:true,
                             responsive : [
                                 {
