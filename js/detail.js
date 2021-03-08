@@ -89,50 +89,45 @@ $(function(){
 
     });
 
-    // cutting txt on detailTxt
-        // cutting text each boxes
-        let desTxt = $(".txtBox");
-
-            function cutTxt(){
-                let winWidth=$(window).width();
-                let allTxt = $(desTxt).find(".detailDes").text();
-
-                if(winWidth<1200){
-                    $(desTxt).find(".detailDes").text(allTxt.substr(0,50) + '.......');
-                }
-            //                     let lines = $(desTxt).find(".detailDes").text.split("\n");  
-            // console.log(lines.length);
+        // cutting txt on detailTxt
+        // 위의 ajax가 로드된 후에! 함수 실행 되도록. 
         
-            }
-            cutTxt();
-            // let allTxt = detailTxt.find(".detailDes").text();
+        $(document).ajaxComplete(function(){
+            let desTxt = $(".detailDes").text();
+            let cutTxt = $(desTxt).text().substring(0,100);
+
+            $(".deatilDes").text(cutTxt);
+
+            // $(".txtBox").append('<span class="detailDes">' + cutTxt + '</span>');
+        });    
+        
+        
+        // console.log(cutTxt);
+
             
-            // function cutTxt() {
-            //     let desHeight = $(desTxt).height();
-            //    console.log(desHeight);
+
+        //let desTxt = $(".detailDes").text();
+        // let cutTxt = $(".detailDes").text().substring(0,100);
+        
+        //console.log(desTxt);
+
+            // function cutTxt(){
+            //     let winWidth=$(window).width();
                 
-            // }
-                    // if(desHeight > txtHeight){
 
-                    // }
-
-        //         if (txtWidth < 800) {
-        //             mainWebBox.eq(i).find(".cutTxt").text(allTxt.substr(0, 20) + '...');
-        
-        //         } else {
-        //             mainWebBox.eq(i).find(".cutTxt").text(allTxt.substr(0, 40) + '...');
-        
-        //         }
-        //     }
-
-        //    $(window).resize(function () {
-        //        cutTxt()
+            //     if(winWidth<1200){
+            //         $(desTxt).find(".detailDes").text(allTxt.split("0,20") + '.......');
+            //     }
        
-        //    });
-        //    cutTxt()
+        
+            // }
 
-          
+            // $(window).resize(function(){
+            //     cutTxt()
+            // });
 
+            // cutTxt();
+         
 
 
 });
