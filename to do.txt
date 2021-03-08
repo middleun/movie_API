@@ -55,6 +55,9 @@
 11. 🔷overlay 꽉차게
 12. 각 section마다 center
 13. section class->id
+
+14. search result page 
+    - 검색결과가 하나일 때
  
 
 *. 모든 페이지에 검색창 추가 ? !

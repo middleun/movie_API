@@ -43,7 +43,7 @@
         topNavLi[3].classList.add('active');
     }
 
-    console.log(topNavLi[0]);
+    // console.log(topNavLi[0]);
 
 
 

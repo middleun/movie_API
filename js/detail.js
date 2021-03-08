@@ -93,18 +93,25 @@ $(function(){
         // cutting text each boxes
         let desTxt = $(".txtBox");
 
+            function cutTxt(){
+                let winWidth=$(window).width();
+                let allTxt = $(desTxt).find(".detailDes").text();
+
+                if(winWidth<1200){
+                    $(desTxt).find(".detailDes").text(allTxt.substr(0,50) + '.......');
+                }
+            //                     let lines = $(desTxt).find(".detailDes").text.split("\n");  
+            // console.log(lines.length);
         
-            // let allTxt = detailTxt.find(".detailDes").text();
-
-        
-            function cutTxt() {
-                let txtHeight = $(".detailTxt").height();
-                let desHeight = $(desTxt).height();
-
-            console.log(txtHeight, desHeight);
-
-                
             }
+            cutTxt();
+            // let allTxt = detailTxt.find(".detailDes").text();
+            
+            // function cutTxt() {
+            //     let desHeight = $(desTxt).height();
+            //    console.log(desHeight);
+                
+            // }
                     // if(desHeight > txtHeight){
 
                     // }
