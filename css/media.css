@@ -60,11 +60,14 @@
 
 
 
+    .detailSec .detailUp{height:70%; display:flex; flex-direction: column; justify-content: center; align-items: center;}
+    .detailSec .detailDown{height:30%;}
 
-    /* .detailSec .detailUp .detailImg{float:none; width:100%; height:30%;}
-    .detailSec .detailUp .detailImg img{width:100%;height:none;}
-    .detailSec .detailUp .detailInfo{float:none; width:100%; height:20%;}
-    .detailSec .detailUp .detailTxt{float:none; width:100%; height:50%;} */
+    .detailSec .detailUp .detailImg{float:none; height:50%; padding:30px;}
+    /* .detailSec .detailUp .detailImg img{width:100%;height:none;} */
+    .detailSec .detailUp .detailInfo{float:none; _width:100%; height:20%; display:flex; justify-content: flex-start; }
+    .detailSec .detailUp .detailInfo h3{font-size:25px;}
+    .detailSec .detailUp .detailTxt{float:none; width:100%; height:30%;}
 
 
         
