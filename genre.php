@@ -44,7 +44,7 @@
                 <img src="./img/loading_8.gif" alt="">
             </div>          
             
-            <div class="genreSec">
+            <div class="genreSec section">
                 <div class="genreTab">
                     <button type="button" class="all"><span>All</span></button>
                     <button type="button" class="action"><span>Action</span></button>

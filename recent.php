@@ -42,7 +42,7 @@
             
             <!-- end of loading Box -->
 
-            <div class="recentSec">
+            <div class="recentSec section">
                 <div class="movieContainer clear">
                         
                 </div>

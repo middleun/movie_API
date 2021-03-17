@@ -18,7 +18,8 @@ font-family: 'Work Sans';}
 button{cursor: pointer;}
 .input:focus {outline: none;}
 
-
+/* common section style */
+.section{width:100%; height:clac(100vh - 10%); padding-bottom:10%;}
 
 /* common overlay style */
 .overlay{position:absolute; left:0; top:0;width:100%;height:100%; background:rgba(0, 0, 0, 0.322); _position:relative;}

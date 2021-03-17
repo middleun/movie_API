@@ -137,9 +137,9 @@ color:#fff;}
 /********************
 detail page style 
 *********************/
-.detailSec{width:100%; height:800px;  _background:#fff; display: flex; flex-direction: column; justify-content: center;
+.detailSec{width:100%; height:900px;  _background:#fff; display: flex; flex-direction: column; justify-content: center;
 border-radius: 20px; overflow: hidden; position:relative; margin:30px 0;}
-.detailSec .border{display:block; position:absolute;width:98%;  height:97%;border-radius: 20px; border:2px dashed #651619;
+.detailSec .border{display:block; position:absolute;width:98%;  height:85%;border-radius: 20px 20px 0px 0px; border:2px dashed #651619;
 margin:auto; left:50%; top:1%;transform: translateX(-50%); }
 
 /* detail up */

@@ -36,7 +36,7 @@
         
             
             <!-- serach section -->
-            <div class="searchSec">
+            <div class="searchSec section">
                 <div class="quoteTxt">
                     <h2><i class="fas fa-quote-left"></i>Do The Next Right Thing<i class="fas fa-quote-right"></i></h2>
                 </div>

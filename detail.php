@@ -32,7 +32,7 @@
             <!-- header -->
             <?php include $_SERVER["DOCUMENT_ROOT"]. "/movie_api/include/header.php";?>    
             
-            <div class="detailSec">
+            <div class="detailSec section">
                 <span class="border"></span>
                 <!-- <div class="detailImg">
                     <img src="" alt="">
