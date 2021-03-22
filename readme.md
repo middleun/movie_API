@@ -52,6 +52,7 @@ tag: [movie, api, portfolio]
 
 # 5. 사용 프레임워크 및 플러그인
 
+- jQuery
 - Masonry layout
 - light slider
 
