@@ -2,7 +2,7 @@
 layout: post
 title: "영화검색사이트"
 subtitle: "[API]"
-date: 2020-03-22 11:00
+date: 2020-03-22
 background: #651619
 tag: [movie, api, portfolio]
 ---
