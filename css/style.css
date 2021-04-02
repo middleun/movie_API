@@ -100,7 +100,7 @@ genre page style
 .genreSec .genreTab{width:100%; height:50px; display:flex; justify-content: space-between; align-items: center;margin:auto;
 background:#fff; border-radius: 20px ; overflow: hidden; transition: all 0.4s linear; }
 .genreSec .genreTab button{width:12%; height:100%; border:none; cursor: pointer; border-right:2px solid #651619;
-font-family: 'Montserrat'; font-size: 16px; font-weight: 600; text-align: center; bottom:0; display:flex; align-items: center; flex-direction: center;
+font-family: 'Montserrat'; font-size: 16px; font-weight: 600; text-align: center; bottom:0; display:flex; align-items: center;
 justify-content: center; color:#651619; transition: all 0.5s; position:relative;}
 .genreSec .genreTab button:nth-child(9){border-right:none;}
 /* .genreSec .genreTab button i{display: inline-block; font-size:20px;margin:auto;} */

@@ -5,6 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feelm So Good : Search</title>
+    <meta name="keywords" content="영화 검색 사이트, API, Movie api, 공공데이터">
+   <meta name="subject" content="api 활용 영화검색사이트, Feelm So Good">
+   <meta name="description" content="네이버와 yts의 오픈api를 활용한 영화 검색 사이트입니다.">
+   <meta name="author" content="eunallaco@gmail.com, 이중은">
+   <!-- <meta name="robots" content="index,follow"> -->
+   <meta name="copyright" content="copyrights 2021 LEEJUNGEUN.">
+   <meta property="og:type" content="website">
+   <meta property="og:title" content="Feelm So Good : Movie API">
+   <meta property="og:description" content="네이버와 yts의 오픈api를 활용한 영화 검색 사이트입니다.">
+   <meta property="og:image" content="http://middleun.dothome.co.kr/movie_api/img/favicon_32x32.png">
+   <meta property="og:url" content="https://middleun.dothome.co.kr/movie_api">
 
     <!-- favicon link -->
     <link rel="icon" href="./img/favicon_32x32.png"/>
