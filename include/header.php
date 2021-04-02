@@ -39,11 +39,10 @@
         topNavLi[2].classList.add('active');
     }else if(pathname.includes('detail')){
         topNavLi[2].classList.add('active');
-    }else if(pathname.includes('search')){
-        topNavLi[3].classList.add('active');
+    
     }
 
-    // console.log(topNavLi[0]);
+    console.log(topNavLi[0]);
 
 
 

@@ -89,45 +89,43 @@ $(function(){
 
     });
 
-        // cutting txt on detailTxt
-        // 위의 ajax가 로드된 후에! 함수 실행 되도록. 
+    // cutting txt on detailTxt
+        // cutting text each boxes
+        let desTxt = $(".txtBox");
+
         
-        $(document).ajaxComplete(function(){
-            let desTxt = $(".detailDes").text();
-            let cutTxt = $(desTxt).text().substring(0,100);
+            // let allTxt = detailTxt.find(".detailDes").text();
 
-            $(".deatilDes").text(cutTxt);
-
-            // $(".txtBox").append('<span class="detailDes">' + cutTxt + '</span>');
-        });    
         
-        
-        // console.log(cutTxt);
+            function cutTxt() {
+                let txtHeight = $(".detailTxt").height();
+                let desHeight = $(desTxt).height();
 
-            
+            console.log(txtHeight, desHeight);
 
-        //let desTxt = $(".detailDes").text();
-        // let cutTxt = $(".detailDes").text().substring(0,100);
-        
-        //console.log(desTxt);
-
-            // function cutTxt(){
-            //     let winWidth=$(window).width();
                 
+            }
+                    // if(desHeight > txtHeight){
 
-            //     if(winWidth<1200){
-            //         $(desTxt).find(".detailDes").text(allTxt.split("0,20") + '.......');
-            //     }
-       
+                    // }
+
+        //         if (txtWidth < 800) {
+        //             mainWebBox.eq(i).find(".cutTxt").text(allTxt.substr(0, 20) + '...');
         
-            // }
+        //         } else {
+        //             mainWebBox.eq(i).find(".cutTxt").text(allTxt.substr(0, 40) + '...');
+        
+        //         }
+        //     }
 
-            // $(window).resize(function(){
-            //     cutTxt()
-            // });
+        //    $(window).resize(function () {
+        //        cutTxt()
+       
+        //    });
+        //    cutTxt()
 
-            // cutTxt();
-         
+          
+
 
 
 });

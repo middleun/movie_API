@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FeelmSoGood</title>
+    <title>Feelm So Good</title>
+
+    <!-- favicon link -->
+    <link rel="icon" href="./img/favicon_32x32.png"/>
 
     <!-- reset css link -->
     <link rel="stylesheet" href="./css/reset.css">
@@ -36,13 +39,13 @@
         
             
             <!-- serach section -->
-            <div class="searchSec section">
+            <div class="searchSec">
                 <div class="quoteTxt">
                     <h2><i class="fas fa-quote-left"></i>Do The Next Right Thing<i class="fas fa-quote-right"></i></h2>
                 </div>
                 <div class="searchBox">
                     
-                    <input type="text" class="searchInput focusEvent" placeholder="search">
+                    <input type="text" class="searchInput focusEvent" placeholder="search movie">
                     <button type="button" class="sendBtn" onkeyup="keydown();"><i class="fas fa-search"></i></button>
 
                     

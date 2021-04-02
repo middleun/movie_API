@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FeelmSoGood</title>
+    <title>Feelm So Good : Genre</title>
+
+    <!-- favicon link -->
+    <link rel="icon" href="./img/favicon_32x32.png"/>
 
     <!-- reset css link -->
     <link rel="stylesheet" href="./css/reset.css">
@@ -44,7 +47,7 @@
                 <img src="./img/loading_8.gif" alt="">
             </div>          
             
-            <div class="genreSec section">
+            <div class="genreSec">
                 <div class="genreTab">
                     <button type="button" class="all"><span>All</span></button>
                     <button type="button" class="action"><span>Action</span></button>

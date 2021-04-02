@@ -2,7 +2,7 @@ $(function(){
     // 주소 받아오는 함수
     let searchValue = document.location.href.split("=")[1];
     let decodeValue = decodeURI(searchValue);
-    console.log(decodeValue);
+    // console.log(decodeValue);
     //  한글로 검색하면 encode한 코드가 결과로 나옴.so,decode해줘야
     
 
@@ -44,6 +44,10 @@ $(function(){
                                 </div>`
                         itemContents.push($(itemHTML).get(0));                                  
             });
+            if(obj.items.length <= 3){
+                $(".grid").css("transform","translateX(0)");
+                $(".grid").css("left","45%");
+            }
         
 
             $(".grid").append(itemContents);
@@ -56,7 +60,8 @@ $(function(){
                     itemSelector: '.gridItem',
                     columnWidth: '.gridSizer',
                     // horizontalOrder: true,
-                    percentPosition: true 
+                    percentPosition: true,
+                    // fitWidth: true, 
                 });
             });
 

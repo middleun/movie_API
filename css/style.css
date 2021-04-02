@@ -63,7 +63,7 @@ background:#fff;cursor:pointer;}
 search result page style 
  *********************/
 
-.grid{width:100%; height:80%; font-family:'Noto Sans KR'; left:50%; transform:translateX(-49%); position:relative;}
+.grid{width:100%; height:80%; font-family:'Noto Sans KR'; left:50%; transform:translateX(-49%); position:relative; margin:0 auto;}
 .grid .gridSizer{width:25%;}
 .grid .gridItem{width:20%; height:auto;position:relative; float:left; background:none; padding:20px; transition: all 0.4s linear;}
 
@@ -99,7 +99,7 @@ genre page style
 /* genren Tab sytle */
 .genreSec .genreTab{width:100%; height:50px; display:flex; justify-content: space-between; align-items: center;margin:auto;
 background:#fff; border-radius: 20px ; overflow: hidden; transition: all 0.4s linear; }
-.genreSec .genreTab button{width:12%; height:100%; border:none; _border-radius: 20px; cursor: pointer; _padding:20px; border-right:2px solid #651619;
+.genreSec .genreTab button{width:12%; height:100%; border:none; cursor: pointer; border-right:2px solid #651619;
 font-family: 'Montserrat'; font-size: 16px; font-weight: 600; text-align: center; bottom:0; display:flex; align-items: center; flex-direction: center;
 justify-content: center; color:#651619; transition: all 0.5s; position:relative;}
 .genreSec .genreTab button:nth-child(9){border-right:none;}
@@ -137,16 +137,17 @@ color:#fff;}
 /********************
 detail page style 
 *********************/
-.detailSec{width:100%; height:900px;  _background:#fff; display: flex; flex-direction: column; justify-content: center;
+.detailSec{width:100%; height:800px;  _background:#fff; display: flex; flex-direction: column; justify-content: center;
 border-radius: 20px; overflow: hidden; position:relative; margin:30px 0;}
-.detailSec .border{display:block; position:absolute;width:98%;  height:85%;border-radius: 20px 20px 0px 0px; border:2px dashed #651619;
+.detailSec .border{display:block; position:absolute;width:98%;  height:97%;border-radius: 20px; border:2px dashed #651619;
 margin:auto; left:50%; top:1%;transform: translateX(-50%); }
 
 /* detail up */
 .detailSec .detailUp{width:100%; height:70%; background:#fff;}
 .detailSec .detailUp .detailImg{float:left; width:40%; height:100%; _background:#B28B8C;
-display:flex; justify-content: center;align-items: center; box-sizing: border-box;_padding:30px;}
-.detailSec .detailUp .detailImg img{max-height: 100%;height: auto;overflow: hidden; border-radius: 10px;}
+display:flex; justify-content: center;align-items: center; box-sizing: border-box;
+padding:30px;}
+.detailSec .detailUp .detailImg img{height:100%;  overflow: hidden; border-radius: 10px;}
 
 .detailSec .detailUp .detailInfo{float:right; width:60%; height:50%; _background:#716d68; font-family: "Work Sans";
 padding:30px 30px 0 0 ;box-sizing: border-box;display:flex; flex-direction: column; justify-content: center;}
@@ -157,7 +158,7 @@ padding:30px 30px 0 0 ;box-sizing: border-box;display:flex; flex-direction: colu
 .detailSec .detailUp .detailTxt{width:60%; height:50%; float:right; padding:20px 30px 20px 0;box-sizing: border-box;
 display:flex; flex-direction: column; _justify-content: center; }
 .detailSec .detailUp .detailTxt h3{margin-bottom:10px;}
-.detailSec .detailUp .detailTxt .txtBox{height:90%; _overflow: hidden;}
+.detailSec .detailUp .detailTxt .txtBox{height:90%; overflow: hidden;}
 
 
 /* deatil down */
@@ -168,7 +169,7 @@ align-items: center; background: #B28B8C;}
 align-items: center;
 align-items: center;}
 .detailSec .detailDown .detailThumb ul li{width:30%; height:100%; overflow: hidden; }
-.detailSec .detailDown .detailThumb ul li img{max-width: 100%;height: auto; overflow: hidden;}
+.detailSec .detailDown .detailThumb ul li img{height:100%; overflow: hidden;}
 
 .detailSec .detailDown .detailThumb ul li:nth-child(1){border-radius: 0 0 0 10px;}
 .detailSec .detailDown .detailThumb ul li:nth-child(3){border-radius: 0 0 10px 0;}
