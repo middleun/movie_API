@@ -32,8 +32,6 @@
     <!-- animation css link -->
     <link rel="stylesheet" href="./css/animation.css">
 
-
-
     <!-- font awesome link -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
 
