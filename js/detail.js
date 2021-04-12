@@ -22,19 +22,7 @@ $(function(){
                     castName += castLi;          
                 }
             }
-            
-
-            // console.log(detailData);
-
-            //for(let i=0; i < detailData.data.movie.cast.length; i++){
-                // if(!detailData.data.movie.cast){
-                //     $(".detailCast").css({"display":"none"});
-                // }
-
-                // if(detailData.data.movie.cast.length == 0){
-                //     detailData.data.movie.cast[0].name = 'No Data';
-                // }
-
+           
                 let detailHTML = `<div class="detailUp clear">
                                     <div class="detailImg">
                                         <img src="${detailData.data.movie.medium_cover_image}" alt="">
@@ -80,8 +68,7 @@ $(function(){
                 getDetail = detailHTML; 
                 // console.log(detailData.data.movie.cast[0].name);
                 $(".detailSec").append(detailHTML);
-                $(".detailCast").append(castName);
-            //}
+                $(".detailCast").append(castName);           
 
            
         }
@@ -89,42 +76,17 @@ $(function(){
 
     });
 
-    // cutting txt on detailTxt
-        // cutting text each boxes
-        let desTxt = $(".txtBox");
+    // // cutting txt on detailTxt
+    //     // cutting text each boxes
+    //     let desTxt = $(".txtBox");
+     
+    //         function cutTxt() {
+    //             let txtHeight = $(".detailTxt").height();
+    //             let desHeight = $(desTxt).height();
 
-        
-            // let allTxt = detailTxt.find(".detailDes").text();
-
-        
-            function cutTxt() {
-                let txtHeight = $(".detailTxt").height();
-                let desHeight = $(desTxt).height();
-
-            console.log(txtHeight, desHeight);
-
+    //         console.log(txtHeight, desHeight);
                 
-            }
-                    // if(desHeight > txtHeight){
-
-                    // }
-
-        //         if (txtWidth < 800) {
-        //             mainWebBox.eq(i).find(".cutTxt").text(allTxt.substr(0, 20) + '...');
-        
-        //         } else {
-        //             mainWebBox.eq(i).find(".cutTxt").text(allTxt.substr(0, 40) + '...');
-        
-        //         }
-        //     }
-
-        //    $(window).resize(function () {
-        //        cutTxt()
-       
-        //    });
-        //    cutTxt()
-
-          
+    //         }                
 
 
 

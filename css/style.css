@@ -103,7 +103,6 @@ background:#fff; border-radius: 20px ; overflow: hidden; transition: all 0.4s li
 font-family: 'Montserrat'; font-size: 16px; font-weight: 600; text-align: center; bottom:0; display:flex; align-items: center;
 justify-content: center; color:#651619; transition: all 0.5s; position:relative;}
 .genreSec .genreTab button:nth-child(9){border-right:none;}
-/* .genreSec .genreTab button i{display: inline-block; font-size:20px;margin:auto;} */
 .genreSec .genreTab button span{display:block; bottom:0; }
 .genreSec .genreTab button.active{color:#fff; background:#651619; }
 

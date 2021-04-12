@@ -71,37 +71,13 @@ $(function(){
 
     // prev 버튼 함수
     $(".numBtns button.prev").click(function(){
-        // if(currentPage == 1){
-        //     return false;
-        // }else{
-        //     $(".recentMovieWrap").remove();
-        //     getData(currentPage -1);
-        //     $(".loadingBox").show();
-        //     $(".numBtns button").removeClass("active");
-        //     $(".numBtns button").eq(currentPage).addClass("active");
-
         goToPrevNext(1, currentPage -1);
-
-        // }
         // console.log(currentPage);
 
     });
     // next 버튼 함수
     $(".numBtns button.next").click(function(){
         goToPrevNext(pageNumLength, currentPage +1);
-
-        // if(currentPage == pageNumLength){
-
-
-        // return false;
-        // }else{
-        //     $(".recentMovieWrap").remove();
-        //     getData(currentPage +1);
-        //     $(".loadingBox").show();
-        //     $(".numBtns button").removeClass("active");
-        //     $(".numBtns button").eq(currentPage).addClass("active");
-
-        // }
 
     });
 

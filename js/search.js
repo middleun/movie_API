@@ -55,13 +55,10 @@ $(function(){
             
             // masonry 적용
             $(".grid").imagesLoaded(function() {
-                // $(".grid").masonry('append', itemContents);
                 $('.grid').masonry({
                     itemSelector: '.gridItem',
                     columnWidth: '.gridSizer',
-                    // horizontalOrder: true,
                     percentPosition: true,
-                    // fitWidth: true, 
                 });
             });
 
