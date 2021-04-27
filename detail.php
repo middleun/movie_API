@@ -43,21 +43,20 @@
 <body>
     <div class="wrap">     
         <div class="overlay"></div> 
-        <div class="center">     
 
             <!-- header -->
             <?php include $_SERVER["DOCUMENT_ROOT"]. "/movie_api/include/header.php";?>    
             
-            <div class="detailSec">
-                <span class="border"></span>
-                <!-- 데이터로 들어가는 곳 /detail.js -->
+            <section id="detailSec">
+                <div class="center">     
 
-            </div>
-            <!-- end of detail section -->  
-                                
+                    <span class="border"></span>
+                    <!-- 데이터로 들어가는 곳 /detail.js -->
+                </div>
+            </section>       
+            <!-- end of detail section -->                     
             
             
-        </div>
 
     </div>  
 

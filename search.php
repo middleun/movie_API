@@ -41,30 +41,33 @@
 <body>
     <div class="wrap">
         <div class="overlay"></div>
-        <div class="center">
 
-            <!-- header -->
-            <?php include $_SERVER["DOCUMENT_ROOT"]. "/movie_api/include/header.php";?>  
-            
-            <div class="grid clear">
-                <div class="gridSizer"></div>
-                <!-- <div class="showMore">
-                    <a href="${item.link}"><i class="fas fa-search"></i></a>
+        <!-- header -->
+        <?php include $_SERVER["DOCUMENT_ROOT"]. "/movie_api/include/header.php";?>  
+        <section id="resultSec">
+            <div class="center">
+                <div class="grid clear">
+                    <div class="gridSizer"></div>
+                    <!-- <div class="showMore">
+                        <a href="${item.link}"><i class="fas fa-search"></i></a>
+                    </div>
+                    <div class="imgBox">
+                        <img src="${item.image}" alt="">
+                    </div>
+                    <div class="txtBox">
+                        <h2>${item.title}</h2>
+                        <h2>제목 : ${item.title}</h2>
+                        <p>감독 : ${item.director}</p>
+                        <p>개봉일 : ${item.pubDate}</p>
+                        <p>평점 : ${item.userRating}</p>
+                    </div> -->
                 </div>
-                <div class="imgBox">
-                    <img src="${item.image}" alt="">
-                </div>
-                <div class="txtBox">
-                    <h2>${item.title}</h2>
-                    <h2>제목 : ${item.title}</h2>
-                    <p>감독 : ${item.director}</p>
-                    <p>개봉일 : ${item.pubDate}</p>
-                    <p>평점 : ${item.userRating}</p>
-                </div> -->
             </div>
+        </section>
             
             
-         </div>
+            
+        
     </div>
 
 

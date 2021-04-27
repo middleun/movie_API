@@ -45,7 +45,6 @@
 <body>
     <div class="wrap">    
         <div class="overlay"></div> 
-        <div class="center">     
             
             <!-- header -->
             <?php include $_SERVER["DOCUMENT_ROOT"]. "/movie_api/include/header.php";?>  
@@ -58,29 +57,31 @@
             
             <!-- end of loading Box -->
 
-            <div class="recentSec">
-                <div class="movieContainer clear">
-                        
-                </div>
-                    <!-- end of container -->
+            <section id="recentSec">
+                <div class="center">     
 
-                <div class="numContainer">
-                    <div class="numBtns">
-                        <button type="button" class="prev arrow"><i class="fas fa-angle-left"></i></button>
-                        <button type="button" class="pageNum" value=1>1</button>
-                        <button type="button" class="pageNum" value=2>2</button>
-                        <button type="button" class="pageNum" value=3>3</button>
-                        <button type="button" class="pageNum" value=4>4</button>
-                        <button type="button" class="pageNum" value=5>5</button>
-                        <button type="button" class="next arrow"><i class="fas fa-angle-right"></i></button>
-
+                    <div class="movieContainer clear">
+                            
                     </div>
+                        <!-- end of container -->
+
+                    <div class="numContainer">
+                        <div class="numBtns">
+                            <button type="button" class="prev arrow"><i class="fas fa-angle-left"></i></button>
+                            <button type="button" class="pageNum" value=1>1</button>
+                            <button type="button" class="pageNum" value=2>2</button>
+                            <button type="button" class="pageNum" value=3>3</button>
+                            <button type="button" class="pageNum" value=4>4</button>
+                            <button type="button" class="pageNum" value=5>5</button>
+                            <button type="button" class="next arrow"><i class="fas fa-angle-right"></i></button>
+
+                        </div>
+                    </div>
+                        <!-- end of number container -->
                 </div>
-                    <!-- end of number container -->
-            </div>
+            </section>
             <!-- end of recent section -->          
             
-        </div>
 
     </div>
 

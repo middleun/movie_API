@@ -38,22 +38,21 @@
     <link rel="stylesheet" href="./css/animation.css">
 
 
-
     <!-- font awesome link -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
 
 </head>
 <body>
     <div class="wrap">     
-        <div class="center">     
+             
 
-            <!-- header -->
-            <?php include $_SERVER["DOCUMENT_ROOT"]. "/movie_api/include/header.php";?>         
-           
+        <!-- header -->
+        <?php include $_SERVER["DOCUMENT_ROOT"]. "/movie_api/include/header.php";?>           
+    
         
-            
-            <!-- serach section -->
-            <div class="searchSec">
+        <!-- serach section -->
+        <section id="searchSec">
+            <div class="center">
                 <div class="quoteTxt">
                     <h2><i class="fas fa-quote-left"></i>Do The Next Right Thing<i class="fas fa-quote-right"></i></h2>
                 </div>
@@ -64,18 +63,17 @@
 
                     
                 </div>                    
-                <!-- end of search box -->  
-                
+            </div>      
 
-                
-            </div>
-            <!-- end of search section -->
+            
+        </section>
+        <!-- end of search section -->
           
 
                        
             
             
-        </div>
+        
 
     </div>
 
@@ -84,15 +82,6 @@
 
     <!-- jquery CDN link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    
-
-    <!-- latest page jQuery link -->
-    <!-- <script src="./js/recent.js"></script> -->
-
-   
-
-
     <script>
         $(function(){
             function searchMovie(){

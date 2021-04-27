@@ -1,22 +1,24 @@
-<div id="header">
-    <div class="topNav">
-        <ul>
-            <li class="active"><a href="./index.php">Home</a></li>
-            <li><a href="./recent.php">Latest</a></li>
-            <li><a href="./genre.php">Genre</a></li>
-        </ul>
-    </div>
-    <div class="searchNav">
-        <a href="#"><i class="fas fa-search"></i></a>
-    </div>
-</div>      
+<header>
+    <div class="center">
+        <div class="topNav">
+            <ul>
+                <li class="active"><a href="./index.php">Home</a></li>
+                <li><a href="./recent.php">Latest</a></li>
+                <li><a href="./genre.php">Genre</a></li>
+            </ul>
+        </div>
+        <!-- <div class="searchNav">
+            <a href="#"><i class="fas fa-search"></i></a>
+        </div> -->
+    </div>    
+</header>      
 
 
 <script>
             
     // 내비게이션 active, 페이지 연결 
     const pathname=window.location.pathname;
-    const topNavLi=document.querySelectorAll('#header .topNav ul li');
+    const topNavLi=document.querySelectorAll('header .topNav ul li');
 
     for(let i=0; i<topNavLi.length; i++){
         topNavLi[i].classList.remove('active');
