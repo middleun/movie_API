@@ -43,8 +43,7 @@
 
 </head>
 <body>
-    <div class="wrap">     
-             
+    <div class="wrap">                  
 
         <!-- header -->
         <?php include $_SERVER["DOCUMENT_ROOT"]. "/movie_api/include/header.php";?>           
@@ -60,18 +59,18 @@
                     
                     <input type="text" class="searchInput focusEvent" placeholder="search movie">
                     <button type="button" class="sendBtn" onkeyup="keydown();"><i class="fas fa-search"></i></button>
-
-                    
+                   
                 </div>                    
-            </div>      
-
-            
+            </div>                 
         </section>
         <!-- end of search section -->
-          
 
-                       
-            
+        <footer>
+            <div class="center">
+                <p>[Movie Api Project] Feelm So Good || Designed by Leejungeun </p>
+            </div>
+        
+        </footer>     
             
         
 

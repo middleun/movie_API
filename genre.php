@@ -48,108 +48,114 @@
     <div class="wrap">  
         <div class="overlay"></div>   
             
-            <!-- header -->
-            <?php include $_SERVER["DOCUMENT_ROOT"]. "/movie_api/include/header.php";?>              
+        <!-- header -->
+        <?php include $_SERVER["DOCUMENT_ROOT"]. "/movie_api/include/header.php";?>              
+    
+        <div class="loadingBox">
+            <img src="./img/loading_8.gif" alt="">
+        </div>          
         
-            <div class="loadingBox">
-                <img src="./img/loading_8.gif" alt="">
-            </div>          
-            
-            <section id="genreSec">
-                <div class="center">     
+        <section id="genreSec">
+            <div class="center">     
 
-                    <div class="genreTab">
-                        <button type="button" class="all"><span>All</span></button>
-                        <button type="button" class="action"><span>Action</span></button>
-                        <button type="button" class="romance"><span>Romance</span></button>
-                        <button type="button" class="comedy"><span>Comedy</span></button>
-                        <button type="button" class="animation"><span>Animation</span></button>
-                        <button type="button" class="sci-fi"><span>sci-fi</span></button>
-                        <button type="button" class="thriller"><span>thriller</span></button>
-                        <button type="button" class="mystery"><span>mystery</span></button>
-                        <button type="button" class="adventure"><span>Adventure</span></button>
+                <div class="genreTab">
+                    <button type="button" class="all"><span>All</span></button>
+                    <button type="button" class="action"><span>Action</span></button>
+                    <button type="button" class="romance"><span>Romance</span></button>
+                    <button type="button" class="comedy"><span>Comedy</span></button>
+                    <button type="button" class="animation"><span>Animation</span></button>
+                    <button type="button" class="sci-fi"><span>sci-fi</span></button>
+                    <button type="button" class="thriller"><span>thriller</span></button>
+                    <button type="button" class="mystery"><span>mystery</span></button>
+                    <button type="button" class="adventure"><span>Adventure</span></button>
 
-                    </div>
-                    <!-- end of genre Tab -->
-
-                    <div class="genrePan">
-                        <div class="all genreBox">
-                            <div class="slideCon allCon" id="allSlide">
-                            </div>
-
-                        </div>
-                        <div class="action genreBox">
-                        
-                            
-                            
-                            <div class="slideCon actionCon" id="actionSlide">
-                                <!-- <div class="slideBox">
-                                    <div>
-                                        <img src="/movie_api/img/sample.jpg" alt="">
-                                        <div class="slideTxt">
-                                            <h3>Title</h3>
-                                            <p class="rating"></p>
-                                        </div>
-                                        <a href="#">Detail</a>
-                                    </div>
-                                </div>
-                                end of slide box -->
-                                
-                            </div>
-                            <!-- end of slideCon -->
-                        </div>
-                        <!-- end of action -->
-                        <div class="romance genreBox">
-                            <div class="slideCon romanceCon" id="romanceSlide">
-                            </div>
-
-                        </div>
-                        <!-- end of romance -->
-                        <div class="comedy genreBox">
-                            <div class="slideCon comedyCon" id="comedySlide">
-                            </div>
-
-                        </div>
-                        <!-- end of comedy -->
-                        <div class="animation genreBox">
-                            <div class="slideCon animationCon" id="animationSlide">
-                            </div>
-
-                        </div>
-                        <!-- end of animation -->
-                        <div class="sci-fi genreBox">
-                            <div class="slideCon sci-fiCon" id="sci-fiSlide">
-                            </div>
-
-                        </div>
-                        <!-- end of sci-fi -->
-                        <div class="thriller genreBox">
-                            <div class="slideCon thrillerCon" id="thrillerSlide">
-                            </div>
-
-                        </div>
-                        <!-- end of thriller -->
-                        <div class="mystery genreBox">
-                            <div class="slideCon mysteryCon" id="mysterySlide">
-                            </div>
-
-                        </div>
-                        <!-- end of mystery -->
-                        <div class="adventure genreBox">
-                            <div class="slideCon adventureCon" id="adventureSlide">
-                            </div>
-
-                        </div>
-                        <!-- end of adventure -->
-
-
-                    </div>
-                    <!-- end of genre panel -->
                 </div>
+                <!-- end of genre Tab -->
 
-            </section>
-            <!-- end of genre section -->                
-            
+                <div class="genrePan">
+                    <div class="all genreBox">
+                        <div class="slideCon allCon" id="allSlide">
+                        </div>
+
+                    </div>
+                    <div class="action genreBox">
+                    
+                        
+                        
+                        <div class="slideCon actionCon" id="actionSlide">
+                            <!-- <div class="slideBox">
+                                <div>
+                                    <img src="/movie_api/img/sample.jpg" alt="">
+                                    <div class="slideTxt">
+                                        <h3>Title</h3>
+                                        <p class="rating"></p>
+                                    </div>
+                                    <a href="#">Detail</a>
+                                </div>
+                            </div>
+                            end of slide box -->
+                            
+                        </div>
+                        <!-- end of slideCon -->
+                    </div>
+                    <!-- end of action -->
+                    <div class="romance genreBox">
+                        <div class="slideCon romanceCon" id="romanceSlide">
+                        </div>
+
+                    </div>
+                    <!-- end of romance -->
+                    <div class="comedy genreBox">
+                        <div class="slideCon comedyCon" id="comedySlide">
+                        </div>
+
+                    </div>
+                    <!-- end of comedy -->
+                    <div class="animation genreBox">
+                        <div class="slideCon animationCon" id="animationSlide">
+                        </div>
+
+                    </div>
+                    <!-- end of animation -->
+                    <div class="sci-fi genreBox">
+                        <div class="slideCon sci-fiCon" id="sci-fiSlide">
+                        </div>
+
+                    </div>
+                    <!-- end of sci-fi -->
+                    <div class="thriller genreBox">
+                        <div class="slideCon thrillerCon" id="thrillerSlide">
+                        </div>
+
+                    </div>
+                    <!-- end of thriller -->
+                    <div class="mystery genreBox">
+                        <div class="slideCon mysteryCon" id="mysterySlide">
+                        </div>
+
+                    </div>
+                    <!-- end of mystery -->
+                    <div class="adventure genreBox">
+                        <div class="slideCon adventureCon" id="adventureSlide">
+                        </div>
+
+                    </div>
+                    <!-- end of adventure -->
+
+
+                </div>
+                <!-- end of genre panel -->
+            </div>
+
+        </section>
+        <!-- end of genre section --> 
+
+        <footer>
+            <div class="center">
+                <p>[Movie Api Project] Feelm So Good || Designed by Leejungeun </p>
+            </div>
+        
+        </footer>                       
             
 
     </div>

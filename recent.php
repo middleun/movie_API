@@ -46,41 +46,48 @@
     <div class="wrap">    
         <div class="overlay"></div> 
             
-            <!-- header -->
-            <?php include $_SERVER["DOCUMENT_ROOT"]. "/movie_api/include/header.php";?>  
-            
-            
-            <div class="loadingBox">
-                <img src="./img/loading_8.gif" alt="">
-            </div>          
+        <!-- header -->
+        <?php include $_SERVER["DOCUMENT_ROOT"]. "/movie_api/include/header.php";?>  
+        
+        
+        <div class="loadingBox">
+            <img src="./img/loading_8.gif" alt="">
+        </div>          
 
-            
-            <!-- end of loading Box -->
+        
+        <!-- end of loading Box -->
 
-            <section id="recentSec">
-                <div class="center">     
+        <section id="recentSec">
+            <div class="center">     
 
-                    <div class="movieContainer clear">
-                            
-                    </div>
-                        <!-- end of container -->
-
-                    <div class="numContainer">
-                        <div class="numBtns">
-                            <button type="button" class="prev arrow"><i class="fas fa-angle-left"></i></button>
-                            <button type="button" class="pageNum" value=1>1</button>
-                            <button type="button" class="pageNum" value=2>2</button>
-                            <button type="button" class="pageNum" value=3>3</button>
-                            <button type="button" class="pageNum" value=4>4</button>
-                            <button type="button" class="pageNum" value=5>5</button>
-                            <button type="button" class="next arrow"><i class="fas fa-angle-right"></i></button>
-
-                        </div>
-                    </div>
-                        <!-- end of number container -->
+                <div class="movieContainer clear">
+                        
                 </div>
-            </section>
-            <!-- end of recent section -->          
+                    <!-- end of container -->
+
+                <div class="numContainer">
+                    <div class="numBtns">
+                        <button type="button" class="prev arrow"><i class="fas fa-angle-left"></i></button>
+                        <button type="button" class="pageNum" value=1>1</button>
+                        <button type="button" class="pageNum" value=2>2</button>
+                        <button type="button" class="pageNum" value=3>3</button>
+                        <button type="button" class="pageNum" value=4>4</button>
+                        <button type="button" class="pageNum" value=5>5</button>
+                        <button type="button" class="next arrow"><i class="fas fa-angle-right"></i></button>
+
+                    </div>
+                </div>
+                    <!-- end of number container -->
+            </div>
+        </section>
+        <!-- end of recent section --> 
+        
+        <footer>
+            <div class="center">
+                <p>[Movie Api Project] Feelm So Good || Designed by Leejungeun </p>
+            </div>
+        
+        </footer>
             
 
     </div>

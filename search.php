@@ -64,6 +64,13 @@
                 </div>
             </div>
         </section>
+
+        <footer>
+            <div class="center">
+                <p>[Movie Api Project] Feelm So Good || Designed by Leejungeun </p>
+            </div>
+        
+        </footer>
             
             
             

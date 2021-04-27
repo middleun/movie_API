@@ -44,17 +44,24 @@
     <div class="wrap">     
         <div class="overlay"></div> 
 
-            <!-- header -->
-            <?php include $_SERVER["DOCUMENT_ROOT"]. "/movie_api/include/header.php";?>    
-            
-            <section id="detailSec">
-                <div class="center">     
+        <!-- header -->
+        <?php include $_SERVER["DOCUMENT_ROOT"]. "/movie_api/include/header.php";?>    
+        
+        <section id="detailSec">
+            <div class="center">     
 
-                    <span class="border"></span>
-                    <!-- 데이터로 들어가는 곳 /detail.js -->
-                </div>
-            </section>       
-            <!-- end of detail section -->                     
+                <span class="border"></span>
+                <!-- 데이터로 들어가는 곳 /detail.js -->
+            </div>
+        </section>       
+        <!-- end of detail section -->      
+        
+        <footer>
+            <div class="center">
+                <p>[Movie Api Project] Feelm So Good || Designed by Leejungeun </p>
+            </div>
+        
+        </footer>
             
             
 

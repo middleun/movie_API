@@ -67,7 +67,7 @@ $(function(){
                                 <!-- end of detail section -->`;
                 getDetail = detailHTML; 
                 // console.log(detailData.data.movie.cast[0].name);
-                $(".detailSec").append(detailHTML);
+                $("#detailSec .center").append(detailHTML);
                 $(".detailCast").append(castName);           
 
            

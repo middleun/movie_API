@@ -4,7 +4,7 @@ body{display:block; font-family:'Montserrat'; background:url(../img/movie_api_bg
 background-size:cover;}
 
 .wrap{width:100%; height: auto; }
-.center{height:auto; margin:0 auto; max-width: 1280px;position:relative; _transition:all 0.4s linear;}
+.center{height:auto; margin:0 auto; max-width: 1280px;position:relative; }
 .clear:after{display:block; content: ''; clear:both; box-sizing: border-box;}
 
 
@@ -24,7 +24,7 @@ button{cursor: pointer;}
 
 
 /***** common header style *****/
-header{width:100%; height:auto; position:fixed; background:none;z-index:10;} 
+header{width:100%; height:auto; left:0; top:0; background:none;z-index:10;} 
 header .center{display: flex; justify-content: center; align-items: center;}
 header .topNav{width:90%;}
 header .topNav ul{width:100%; display:flex; justify-content: space-evenly;align-items: center; padding:20px 0;}
@@ -42,6 +42,11 @@ header .topNav ul li a:hover::after,
 header .topNav ul li.active a::after{width:60%;}
 
 header .topNav ul li.active a{color:#e6363c;}
+
+/* common footer style */
+footer{width:100%;height:auto; background:rgba(0, 0, 0, 0.8); z-index:10; left:0; bottom:0; }
+footer .center{text-align:center;}
+footer p{color:#fff; padding:20px 0;}
 
 
 
