@@ -46,22 +46,9 @@
         <?php include $_SERVER["DOCUMENT_ROOT"]. "/movie_api/include/header.php";?>  
         <section id="resultSec">
             <div class="center">
-                <div class="grid clear">
-                    <div class="gridSizer"></div>
-                    <!-- <div class="showMore">
-                        <a href="${item.link}"><i class="fas fa-search"></i></a>
-                    </div>
-                    <div class="imgBox">
-                        <img src="${item.image}" alt="">
-                    </div>
-                    <div class="txtBox">
-                        <h2>${item.title}</h2>
-                        <h2>제목 : ${item.title}</h2>
-                        <p>감독 : ${item.director}</p>
-                        <p>개봉일 : ${item.pubDate}</p>
-                        <p>평점 : ${item.userRating}</p>
-                    </div> -->
-                </div>
+                
+                <!-- itemcontents appended from search.js-->
+                
             </div>
         </section>
 
@@ -81,11 +68,7 @@
     <!-- jquery CDN link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <!-- jQuery Masonly CDN link -->
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-
     <!-- imageloaded CDN link -->
-
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>  
 
     <!-- main jQuery link -->

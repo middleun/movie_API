@@ -1,5 +1,4 @@
 /* google font import */
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
@@ -63,23 +62,19 @@ background:#fff;cursor:pointer;}
 
 /*******************
 search result page style 
- *********************/
-
-.grid{width:100%; height:80%; font-family:'Noto Sans KR'; left:50%; transform:translateX(-49%); position:relative; margin:0 auto;}
-.grid .gridSizer{width:25%;}
-.grid .gridItem{width:20%; height:auto;position:relative; float:left; background:none; padding:20px; transition: all 0.4s linear;}
-.grid .gridItem .conBox{width:100%; height:100%; box-sizing: border-box; position:relative;
-display:flex; flex-direction: column;justify-content: center; align-items: center; border-radius: 20px; background: #fff; padding:10px;}
-.grid .gridItem .conBox .imgBox{width:95%; height:50%; overflow:hidden;  border-radius:20px; position:relative;
+*********************/
+#resultSec{height:auto; margin:30px 0;}
+#resultSec .center{max-width:980px; display:flex; flex-wrap:wrap;}
+#resultSec .conBox{width:45%; height:200px; display:flex; background:#fff; margin:0 20px 20px 0; padding:10px; border-radius:5px;}
+#resultSec .conBox .imgBox{position:relative; width:30%; display:flex; justify-content: center; align-items:center; 
 transition:all 0.4s;}
-.grid .gridItem .conBox .imgBox img{width:100%; border-radius:20px;}
-
-.grid .gridItem .conBox .txtBox{width:90%; height:50%;  border-radius:20px;_padding:10px; background:none; text-align:center;}
-.grid .gridItem .conBox .txtBox h2{font-size:18px; border-bottom:2px solid #D1B9BA ; padding:5px; margin-bottom:5px;
-color:#651619; text-overflow:ellipsis; width:100%;}
-.grid .gridItem .conBox .txtBox p{font-size:16px;}
-.grid .gridItem .conBox .txtBox .director{color:#716d68; font-weight: 500; }
-.grid .gridItem .conBox .txtBox .rating{color:#651619; font-weight: 500; font-size:14px;}
+#resultSec .conBox .imgBox img{border-radius:5px;}
+#resultSec .conBox .txtBox{width:70%; display:flex; flex-direction: column; justify-content: center; align-items: flex-start;
+padding-left:10px; font-family:'Noto Sans KR'}
+#resultSec .conBox .txtBox h2{font-size:20px; margin-bottom:5px; color:#651619;}
+#resultSec .conBox .txtBox p{margin-bottom:5px;}
+#resultSec .conBox .txtBox p.director{font-weight:600;}
+#resultSec .conBox .txtBox p.rating{color:#651619;}
 
 /********************
 genre page style 

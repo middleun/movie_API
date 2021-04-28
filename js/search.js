@@ -24,43 +24,36 @@ $(function(){
             let itemContents =[];
             $.each(obj.items, function(i, item){
                 console.log(item);
-                let itemHTML =  `<div class="gridItem">
-                                    
-                                    <div class="conBox">
-                                        <div class="imgBox">
-                                            <img src="${item.image}" alt="${item.title}이미지">
-                                            <div class="moreBox">
-                                                <a href="${item.link}" target="_blank" rel="noopener" title="'${item.title}' 네이버 영화 상세페이지 바로가기"><i class="fas fa-search"></i></a>
-                                            </div>
+                let itemHTML =  `<div class="conBox">
+                                    <div class="imgBox">
+                                        <img src="${item.image}" alt="${item.title}이미지">
+                                        <div class="moreBox">
+                                            <a href="${item.link}" target="_blank" rel="noopener" title="'${item.title}' 네이버 영화 상세페이지 바로가기"><i class="fas fa-search"></i></a>
                                         </div>
-                                        <div class="txtBox">
-
-                                            <h2> ${item.title}</h2>
-                                            <p class="director"> ${item.director}</p>
-                                            <p class="date"> ${item.pubDate}</p>
-                                            <p class="rating"><i class="fas fa-star"> ${item.userRating}</i></p>
-                                        </div>  
+                                    </div>
+                                    <div class="txtBox">
+                                        <h2> ${item.title}</h2>
+                                        <p class="director"><i class="fas fa-video">  ${item.director}</i></p>
+                                        <p class="date"><i class="fas fa-calendar-alt">  ${item.pubDate}</i></p>
+                                        <p class="rating"><i class="fas fa-star"> ${item.userRating}</i></p>
                                     </div>  
-
                                 </div>`
                         itemContents.push($(itemHTML).get(0));                                  
             });
-            if(obj.items.length <= 3){
-                $(".grid").css("transform","translateX(0)");
-                $(".grid").css("left","45%");
-            }
-        
+                    
 
-            $(".grid").append(itemContents);
+            $("#resultSec .center").append(itemContents);
 
             
-            // masonry 적용
-            $(".grid").imagesLoaded(function() {
-                $('.grid').masonry({
-                    itemSelector: '.gridItem',
-                    columnWidth: '.gridSizer',
-                    percentPosition: true,
-                });
+            // imagesLoaded 
+            $("#resultSec").imagesLoaded(function() {
+                if(obj.items.length <= 4){
+                    $("#resultSec").height("calc(100vh - 200px");
+                    $("#resultSec .center").height("100%");
+                    $("#resultSec .center").css("justify-content","center");
+                    $("#resultSec .center").css("align-items","center");
+                }
+                
             });
 
         }       
