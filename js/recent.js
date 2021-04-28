@@ -21,7 +21,10 @@ $(function(){
                     let recentHTML=  `<div class="recentMovieWrap">
                                             <div class="recentMovies">
                                                 <div class="movieImg">
-                                                    <img src="${data.data.movies[i].medium_cover_image}" alt="">
+                                                    <img src="${data.data.movies[i].medium_cover_image}" alt="${data.data.movies[i].title}이미지">
+                                                    <div class="moreBox">
+                                                        <a href="/movie_api/detail.php?id=${data.data.movies[i].id}"><i class="fas fa-search"></i></a>
+                                                    </div>
                                                 </div>
                                                 <h3 class="movieTit">${data.data.movies[i].title}</h3>
                                             </div>

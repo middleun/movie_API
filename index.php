@@ -53,7 +53,7 @@
         <section id="searchSec">
             <div class="center">
                 <div class="quoteTxt">
-                    <h2><i class="fas fa-quote-left"></i>Do The Next Right Thing<i class="fas fa-quote-right"></i></h2>
+                    <h2><i class="fas fa-quote-left"></i>Search what you want<i class="fas fa-quote-right"></i></h2>
                 </div>
                 <div class="searchBox">
                     

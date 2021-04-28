@@ -78,9 +78,7 @@
                         </div>
 
                     </div>
-                    <div class="action genreBox">
-                    
-                        
+                    <div class="action genreBox">                               
                         
                         <div class="slideCon actionCon" id="actionSlide">
                             <!-- <div class="slideBox">

@@ -42,14 +42,15 @@ background-color: #fff; border: 3px solid #D1B9BA; }
 /********************
  LATEST page style 
  *********************/
-#recentSec{width:100%; height:auto; margin:auto; _max-width:1100px;position:relative; display:flex; justify-content: center; flex-direction: column;
+#recentSec{width:100%; height:auto; margin:30px 0; position:relative; display:flex; justify-content: center; flex-direction: column;
 }
-#recentSec .movieContainer{_position:absolute;width:100%; height:auto; display:flex; flex-wrap: wrap; justify-content: center;}
+#recentSec .movieContainer{width:100%; height:auto; display:flex; flex-wrap: wrap; justify-content: center;}
 #recentSec .movieContainer .recentMovieWrap{float:left; width:17%; padding:10px; border-radius: 20px; background:#fff; border-radius: 20px;
 overflow: hidden;margin:10px;}
 #recentSec .movieContainer .recentMovieWrap img{width:100%;border-radius: 20px;}
 #recentSec .movieContainer .recentMovieWrap h3{margin-top:5px; text-align:center;font-size:16px; white-space: nowrap; 
 text-overflow:ellipsis; width:100%; overflow: hidden; color:#651619; font-weight: 600;}
+#recentSec .movieContainer .recentMovieWrap .recentMovies .movieImg{position:relative;transition:all 0.4s;}
 
 #recentSec .numContainer{width:100%; height:auto; margin-top:20px; display:flex; 
 justify-content: center; align-items: center; }
@@ -95,8 +96,8 @@ color:#651619; text-overflow:ellipsis; width:100%;}
 /********************
 genre page style 
  *********************/
-#genreSec{width:100%; max-width:980px;height: auto; margin:50px auto;_padding:50px; } 
-
+#genreSec{width:100%; height: auto; margin:30px 0;_padding:50px; } 
+#genreSec .center{max-width:980px;}
 /* genren Tab sytle */
 #genreSec .genreTab{width:100%; height:50px; display:flex; justify-content: space-between; align-items: center;margin:auto;
 background:#fff; border-radius: 20px ; overflow: hidden; transition: all 0.4s linear; }
@@ -123,16 +124,6 @@ border-radius: 20px; overflow: hidden;}
 #genreSec .genrePan .genreBox .slideBox>div .slideTxt p{font-weight:400;font-size:14px; color:#393631;margin-top:10px;}
 #genreSec .genrePan .genreBox .slideBox>div .slideTxt p i{display:block; margin-right: 5px;}
 
-/* more box style */
-#genreSec .genreBox .slideBox>div .slideImg .moreBox{width:100%; height:100%;position:absolute; display:flex; justify-content: center; align-items: center; 
-border:none;border-radius: 20px; opacity:0; transition: all 0.4s ease-in-out; z-index:999;left: 0;top: 0;}
-#genreSec .genreBox .slideBox>div .slideImg .moreBox a{display:flex; justify-content: center; align-items: center;width:50px; height:50px;
-color:#fff;}
-#genreSec .genreBox .slideBox>div .slideImg .moreBox a i{font-size:50px;}
-
-#genreSec .genreBox .slideBox>div .slideImg:hover{transform:scale(1.02);}
-#genreSec .genreBox .slideBox>div .slideImg:hover .moreBox{opacity: 1; background:#6516197a; border:none;}
-#genreSec .genreBox .slideBox>div .slideImg:hover .moreBox a{color:#fff; width:100%;}
 
 /********************
 detail page style 
