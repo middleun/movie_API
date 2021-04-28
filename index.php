@@ -57,7 +57,7 @@
                 </div>
                 <div class="searchBox">
                     
-                    <input type="text" class="searchInput focusEvent" placeholder="search movie">
+                    <input type="text" class="searchInput focusEvent" placeholder="search movie" title="찾고 싶은 영화를 입력해주세요">
                     <button type="button" class="sendBtn" onkeyup="keydown();"><i class="fas fa-search"></i></button>
                    
                 </div>                    

@@ -13,9 +13,9 @@ $(function(){
                             let genreHTML=  `<div class="slideBox">
                                                 <div>
                                                     <div class="slideImg">
-                                                        <img src="${data.data.movies[i].medium_cover_image}" alt="">
+                                                        <img src="${data.data.movies[i].medium_cover_image}" alt="${data.data.movies[i].title}이미지">
                                                         <div class="moreBox">
-                                                            <a href="/movie_api/detail.php?id=${data.data.movies[i].id}"><i class="fas fa-search"></i></a>
+                                                            <a href="/movie_api/detail.php?id=${data.data.movies[i].id}" title="${data.data.movies[i].title} 상세페이지 링크"><i class="fas fa-search"></i></a>
                                                         </div>
                                                     </div>    
                                                     <div class="slideTxt">
@@ -41,7 +41,7 @@ $(function(){
                             slideMove:1,
                             auto:true,
                             loop:true,
-                            speed:400,
+                            speed:1000,
                             controls:true,
                             pager:true,
                             responsive : [

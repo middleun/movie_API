@@ -2,9 +2,9 @@
     <div class="center">
         <div class="topNav">
             <ul>
-                <li class="active"><a href="./index.php">Home</a></li>
-                <li><a href="./recent.php">Latest</a></li>
-                <li><a href="./genre.php">Genre</a></li>
+                <li class="active"><a href="./index.php" title="메인페이지 바로가기">Home</a></li>
+                <li><a href="./recent.php" title="최신영화 바로가기">Latest</a></li>
+                <li><a href="./genre.php" title="장르별영화 바로가기">Genre</a></li>
             </ul>
         </div>
         <!-- <div class="searchNav">

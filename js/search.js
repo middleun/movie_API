@@ -23,14 +23,15 @@ $(function(){
             }
             let itemContents =[];
             $.each(obj.items, function(i, item){
-                // console.log(item.title);
+                console.log(item);
                 let itemHTML =  `<div class="gridItem">
-                                    <div class="moreBox">
-                                        <a href="${item.link}"><i class="fas fa-search"></i></a>
-                                    </div>
+                                    
                                     <div class="conBox">
                                         <div class="imgBox">
-                                            <img src="${item.image}" alt="">
+                                            <img src="${item.image}" alt="${item.title}이미지">
+                                            <div class="moreBox">
+                                                <a href="${item.link}" target="_blank" rel="noopener"><i class="fas fa-search"></i></a>
+                                            </div>
                                         </div>
                                         <div class="txtBox">
 

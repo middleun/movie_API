@@ -54,11 +54,16 @@ border:none;border-radius: 20px; opacity:0; transition: all 0.4s ease-in-out; z-
 .moreBox a{display:flex; justify-content: center; align-items: center;width:50px; height:50px;
 color:#fff;}
 .moreBox a i{font-size:50px;}
-    
+
+.grid .gridItem .imgBox:hover,
 #genreSec .genreBox .slideBox>div .slideImg:hover,
 #recentSec .movieContainer .recentMovieWrap .movieImg:hover{transform:scale(1.02);}
+
+.grid .gridItem .imgBox:hover .moreBox,
 #genreSec .genreBox .slideBox>div .slideImg:hover .moreBox,
 #recentSec .movieContainer .recentMovieWrap .movieImg:hover .moreBox{opacity: 1; background:#6516197a; border:none;}
+
+.grid .gridItem .imgBox:hover .moreBox a,
 #genreSec .genreBox .slideBox>div .slideImg:hover .moreBox a,
 #recentSec .movieContainer .recentMovieWrap .movieImg:hover .moreBox a{color:#fff; width:100%;}
 
