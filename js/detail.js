@@ -10,7 +10,7 @@ $(function(){
     $.ajax({
         url:'https://yts.mx/api/v2/movie_details.json?movie_id='+detailID+'&with_images=true&with_cast=true',
         success: function(detailData){
-            // console.log(detailData.data.movie.cast[0].name);
+            console.log(detailData.data);
 
             let castName = [];
             // cast자체 데이터가 없음! so, cast == undefined
@@ -25,7 +25,7 @@ $(function(){
            
                 let detailHTML = `<div class="detailUp clear">
                                     <div class="detailImg">
-                                        <img src="${detailData.data.movie.medium_cover_image}" alt="">
+                                        <img src="${detailData.data.movie.medium_cover_image}" alt="${detailData.data.movie.title} 이미지">
                                     </div>
                                     <div class="detailInfo">
                                         <h3>${detailData.data.movie.title_long}</h3>
@@ -51,13 +51,13 @@ $(function(){
                                     <div class="detailThumb">
                                         <ul>
                                             <li>
-                                                <img src="${detailData.data.movie.medium_screenshot_image1}" alt="">  
+                                                <img src="${detailData.data.movie.medium_screenshot_image1}" alt="${detailData.data.movie.title} 스크린샷 이미지 1">  
                                             </li>
                                             <li>
-                                                <img src="${detailData.data.movie.medium_screenshot_image2}" alt="">  
+                                                <img src="${detailData.data.movie.medium_screenshot_image2}" alt="${detailData.data.movie.title} 스크린샷 이미지 2">  
                                             </li>
                                             <li>
-                                                <img src="${detailData.data.movie.medium_screenshot_image3}" alt="">  
+                                                <img src="${detailData.data.movie.medium_screenshot_image3}" alt="${detailData.data.movie.title} 스크린샷 이미지 3">  
                                             </li>                                               
                                         </ul>
 
@@ -75,18 +75,6 @@ $(function(){
        
 
     });
-
-    // // cutting txt on detailTxt
-    //     // cutting text each boxes
-    //     let desTxt = $(".txtBox");
-     
-    //         function cutTxt() {
-    //             let txtHeight = $(".detailTxt").height();
-    //             let desHeight = $(desTxt).height();
-
-    //         console.log(txtHeight, desHeight);
-                
-    //         }                
 
 
 

@@ -30,7 +30,7 @@ $(function(){
                                         <div class="imgBox">
                                             <img src="${item.image}" alt="${item.title}이미지">
                                             <div class="moreBox">
-                                                <a href="${item.link}" target="_blank" rel="noopener"><i class="fas fa-search"></i></a>
+                                                <a href="${item.link}" target="_blank" rel="noopener" title="'${item.title}' 네이버 영화 상세페이지 바로가기"><i class="fas fa-search"></i></a>
                                             </div>
                                         </div>
                                         <div class="txtBox">
