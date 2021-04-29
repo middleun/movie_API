@@ -37,12 +37,10 @@ background-color: #fff; border: 3px solid #D1B9BA; }
 /* loading box */
 .loadingBox{position:absolute;width:100%; height:608px; display: flex; justify-content: center;align-items: center; _display:none;}
  
-
 /********************
  LATEST page style 
  *********************/
-#recentSec{width:100%; height:auto; margin:30px 0; position:relative; display:flex; justify-content: center; flex-direction: column;
-}
+#recentSec{width:100%; height:auto; margin:30px 0; position:relative; display:flex; justify-content: center; flex-direction: column;}
 #recentSec .movieContainer{width:100%; height:auto; display:flex; flex-wrap: wrap; justify-content: center;}
 #recentSec .movieContainer .recentMovieWrap{float:left; width:17%; padding:10px; border-radius: 20px; background:#fff; border-radius: 20px;
 overflow: hidden;margin:10px;}
@@ -64,17 +62,18 @@ background:#fff;cursor:pointer;}
 search result page style 
 *********************/
 #resultSec{height:auto; margin:30px 0;}
-#resultSec .center{max-width:980px; display:flex; flex-wrap:wrap;}
-#resultSec .conBox{width:45%; height:200px; display:flex; background:#fff; margin:0 20px 20px 0; padding:10px; border-radius:5px;}
-#resultSec .conBox .imgBox{position:relative; width:30%; display:flex; justify-content: center; align-items:center; 
-transition:all 0.4s;}
+#resultSec .center{max-width:980px; display:flex; flex-wrap:wrap; justify-content: center;}
+#resultSec .conBox{width:20%; height:400px; display:flex; flex-direction:column; background:#fff; margin:0 20px 20px 0; padding:10px; border-radius:5px;}
+#resultSec .conBox:nth-child(4n){margin-right:0;}
+#resultSec .conBox .imgBox{position:relative; width:100%; height:50%; display:flex; justify-content: center; align-items:center; 
+transition:all 0.4s; background:#D1B9BA; border-radius:5px 5px 0 0;}
 #resultSec .conBox .imgBox img{border-radius:5px;}
-#resultSec .conBox .txtBox{width:70%; display:flex; flex-direction: column; justify-content: center; align-items: flex-start;
-padding-left:10px; font-family:'Noto Sans KR'}
+#resultSec .conBox .txtBox{width:100%; height:50%; display:flex; flex-direction: column; justify-content: center; align-items: flex-start;
+padding:0 0 0 10px; font-family:'Noto Sans KR'}
 #resultSec .conBox .txtBox h2{font-size:20px; margin-bottom:5px; color:#651619;}
 #resultSec .conBox .txtBox p{margin-bottom:5px;}
 #resultSec .conBox .txtBox p.director{font-weight:600;}
-#resultSec .conBox .txtBox p.rating{color:#651619;}
+#resultSec .conBox .txtBox p.rating{color:#ac8f90;}
 
 /********************
 genre page style 
@@ -97,7 +96,7 @@ justify-content: center; color:#651619; transition: all 0.5s; position:relative;
 padding:5px;}
 #genreSec .genrePan .genreBox{width:100%;height: 100%;display:flex; flex-direction: column;}
 #genreSec .genrePan .genreBox .slideBox{width:250px; height:auto; padding:10px;border:2px solid #651619; border-radius: 20px;
-_box-sizing: border-box; padding:5px; border-bottom: 5px solid #651619;}
+padding:5px; border-bottom: 5px solid #651619;}
 #genreSec .genrePan .genreBox .slideBox>div{width:100%; height:100%;}
 #genreSec .genrePan .genreBox .slideBox>div .slideImg{width:100%; height:70%;position:relative; transition: all 0.4s linear;
 border-radius: 20px; overflow: hidden;}

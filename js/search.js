@@ -23,10 +23,11 @@ $(function(){
             }
             let itemContents =[];
             $.each(obj.items, function(i, item){
-                console.log(item);
+                // console.log(obj.items.image);
                 let itemHTML =  `<div class="conBox">
                                     <div class="imgBox">
-                                        <img src="${item.image}" alt="${item.title}이미지">
+                                        <img src="${item.image}" alt="${item.title}이미지" onerror="this.src='./img/no_image.png'; this.onerror=null; 
+                                        this.style.width='110px'; this.style.height='150px';">
                                         <div class="moreBox">
                                             <a href="${item.link}" target="_blank" rel="noopener" title="'${item.title}' 네이버 영화 상세페이지 바로가기"><i class="fas fa-search"></i></a>
                                         </div>
@@ -44,6 +45,8 @@ $(function(){
 
             $("#resultSec .center").append(itemContents);
 
+                    
+
             
             // imagesLoaded 
             $("#resultSec").imagesLoaded(function() {
@@ -52,7 +55,13 @@ $(function(){
                     $("#resultSec .center").height("100%");
                     $("#resultSec .center").css("justify-content","center");
                     $("#resultSec .center").css("align-items","center");
-                }
+                }     
+                // if($("#resultSec .conBox .imgBox img").on("error")){
+                //     $(this).attr('src', './img/no_image.png');
+                //     $(this).css("width","100%");
+                // };
+
+                
                 
             });
 

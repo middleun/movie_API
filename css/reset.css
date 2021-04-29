@@ -63,6 +63,8 @@ color:#fff;}
 #genreSec .genreBox .slideBox>div .slideImg:hover .moreBox,
 #recentSec .movieContainer .recentMovieWrap .movieImg:hover .moreBox{opacity: 1; background:#6516197a; border:none;}
 
+#resultSec .conBox .imgBox:hover .moreBox{border-radius:5px 0 0 5px;}
+
 #resultSec .conBox .imgBox:hover .moreBox a,
 #genreSec .genreBox .slideBox>div .slideImg:hover .moreBox a,
 #recentSec .movieContainer .recentMovieWrap .movieImg:hover .moreBox a{color:#fff; width:100%;}
