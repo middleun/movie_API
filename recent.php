@@ -96,36 +96,10 @@
     <!-- jquery CDN link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <!-- recent page jquery link -->
+    <!-- recent page js -->
     <script src="../movie_api/js/recent.js"></script>    
 
-    <script>
-        $(function(){
-            function searchMovie(){
-                let searchResult=$(".searchInput").val();
-                if(!searchResult){
-                    alert("검색어를 입력해주세요");
-                    return false;
-                }
-                location.href="/movie_api/search.html?key=" + searchResult;
-            }
-
-
-            $(".sendBtn").click(function(){
-                searchMovie();
-            });
-
-            // press enter
-            document.addEventListener('keydown', function(e){
-                const keyCode = e.keyCode;
-                if(keyCode == 13){
-                    searchMovie();
-                }
-            });
-           
-        });
-
-    
-    </script>
+    <!-- main js -->
+    <script src='./js/custom.js'></script>
 </body>
 </html>

@@ -52,11 +52,10 @@
         <!-- serach section -->
         <section id="searchSec">
             <div class="center">
-                <div class="quoteTxt">
-                    <h2><i class="fas fa-quote-left"></i>Search what you want<i class="fas fa-quote-right"></i></h2>
+                <div class="txtBox">
+                    <h2>Search movie you want</h2>
                 </div>
-                <div class="searchBox">
-                    
+                <div class="searchBox">                    
                     <input type="text" class="searchInput focusEvent" placeholder="search movie" title="찾고 싶은 영화를 입력해주세요">
                     <button type="button" class="sendBtn" onkeyup="keydown();"><i class="fas fa-search"></i></button>
                    
@@ -81,33 +80,8 @@
 
     <!-- jquery CDN link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        $(function(){
-            function searchMovie(){
-                let searchResult=$(".searchInput").val();
-                if(!searchResult){
-                    alert("검색어를 입력해주세요");
-                    return false;
-                }
-                location.href="./search.php?key=" + searchResult;
-            }
 
-
-            $(".sendBtn").click(function(){
-                searchMovie();
-            });
-
-            // press enter
-            document.addEventListener('keydown', function(e){
-                const keyCode = e.keyCode;
-                if(keyCode == 13){
-                    searchMovie();
-                }
-            });
-           
-        });
-
-    
-    </script>
+    <!-- main js -->
+    <script src='./js/custom.js'></script>
 </body>
 </html>

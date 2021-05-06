@@ -167,5 +167,8 @@
         
     <!-- genre page jQuery link -->
     <script src="./js/genre.js"></script>
+
+    <!-- main js -->
+    <script src='./js/custom.js'></script>
 </body>
 </html>

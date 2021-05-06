@@ -72,10 +72,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
     
 
-    <!-- detail page jQuery link -->
+    <!-- detail page js-->
     <script src="./js/detail.js"></script>
 
-     
+    <!-- main js -->
+    <script src='./js/custom.js'></script>     
 
 </body>
 </html>

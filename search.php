@@ -57,8 +57,7 @@
                 <p>[Movie Api Project] Feelm So Good || Designed by Leejungeun </p>
             </div>
         
-        </footer>
-            
+        </footer>       
             
             
         
@@ -71,8 +70,13 @@
     <!-- imageloaded CDN link -->
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>  
 
-    <!-- main jQuery link -->
+    <!-- search result page js -->
     <script src="./js/search.js"></script>   
+
+    <!-- main js -->
+    <script src='./js/custom.js'></script>
+
+    
        
 
    

@@ -12,13 +12,13 @@ $(function(){
                         for(let i=0; i < data.data.movies.length; i++){
                             let genreHTML=  `<div class="slideBox">
                                                 <div>
-                                                    <div class="slideImg">
-                                                        <img src="${data.data.movies[i].medium_cover_image}" alt="${data.data.movies[i].title}이미지">
+                                                    <div class="imgBox genre">
+                                                        <img src="${data.data.movies[i].medium_cover_image}" alt="${data.data.movies[i].title}이미지" onerror="this.src='./img/no_image.png'; this.onerror=null; this.style.display='none';">
                                                         <div class="moreBox">
                                                             <a href="/movie_api/detail.php?id=${data.data.movies[i].id}" title="${data.data.movies[i].title} 상세페이지 링크"><i class="fas fa-search"></i></a>
                                                         </div>
                                                     </div>    
-                                                    <div class="slideTxt">
+                                                    <div class="txtBox">
                                                         <h3>${data.data.movies[i].title}</h3>
                                                         <p class="rating"><i class="fas fa-star">  ${data.data.movies[i].rating}</i></p>
                                                     </div>
@@ -78,11 +78,14 @@ $(function(){
 
         }
 
+        
+
         let getGenres = ['all', 'action', 'romance', 'comedy', 'animation', 'sci-fi', 'thriller', 'mystery', 'adventure'];
 
         for (let i = 0; i < getGenres.length; i++){   
             getGenre(getGenres[i], '.' + getGenres[i] + 'Con', '#'+getGenres[i] + 'Slide');
         }
+
        
         // genre tab activate
         $(".genreTab button").click(function(){ 
@@ -103,7 +106,6 @@ $(function(){
             }    
        
         });
-
 
 
         // loading box hide

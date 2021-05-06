@@ -1,77 +1,60 @@
 @media screen and (max-width:1280px){
-    .center{max-width:1000px;}
-
-    /* recent page style */
-    .recentSec .movieContainer .recentMovieWrap h3{font-size:14px;}
-
-
-
-
+    /* latest page recent section style */
+    #recentSec .movieContainer .recentMovieWrap{width:22%;}
+    #recentSec .movieContainer .recentMovieWrap h3{font-size:14px;}
 }
 
 @media screen and (max-width:1024px){
-    .center{max-width:800px;}
-
     /* search result page style */
     #resultSec .conBox{width:45%; height:200px; flex-direction: row; margin-right:20px;}
     #resultSec .conBox .imgBox{width:45%; height:auto; border-radius:5px 0 0 5px;}
     #resultSec .conBox .txtBox{width:55%; height:auto; padding:0 20px;}
     #resultSec .conBox:nth-child(even){margin-right:0;}
 
+    /* latest page recent section */
+    #recentSec .movieContainer .recentMovieWrap{width:29%;}
+
     /* genre page style */
-    .genreSec .genreTab button{font-size:14px;}
+    #genreSec .genreTab button{font-size:14px;}
 
     /* detail page style */
-    .detailSec .detailUp{height:60%;}
-    .detailSec .detailDown{height:40%;}
+    #detailSec .detailUp{height:60%;}
+    #detailSec .detailDown{height:40%;}
 
 }    
 
-
 @media screen and (max-width:850px){
-    .center{max-width:600px;}
-
     /* header style */
     #header .topNav ul li a{font-size:16px;}
 
     /* main page search section style */
-    .searchSec .quoteTxt h2{font-size: 30px; transition:all 0.4s linear;}
-    .searchSec .searchBox .searchInput{width:400px; height:60px; transition:all 0.4s linear;}
+    #searchSec .txtBox h2{font-size:25px;}
+    #searchSec .searchBox .searchInput{width:400px; height:60px;}
+
 
     /* search result page sytle */
     #resultSec .conBox .txtBox h2{font-size:18px;}
     #resultSec .conBox .txtBox p{font-size:14px;}
 
-    /* recent page style */
-    .recentSec .movieContainer .recentMovieWrap{width:30%;}
-    .recentSec .movieContainer .recentMovieWrap:nth-child(9),
-    .recentSec .movieContainer .recentMovieWrap:nth-child(10){display:none;}
-
     /* genre page style */
-    .genreSec .genreTab{width:60%;transition: all 0.4s linear;}
-    .genreSec .genreTab button{font-size:12px;}
-
-    .genreSec .genrePan .genreBox .slideBox>div .slideTxt h3{font-size:14px;}
-        
+    #genreSec .genreTab{width:60%;transition: all 0.4s linear;}
+    #genreSec .genreTab button{font-size:12px;}
+    #genreSec .genrePan .genreBox .slideBox>div .slideTxt h3{font-size:14px;}
+    
 }
 
 @media screen and (max-width:650px){
-    /* .center{max-width:400px;}    */
-
     /* main page search section  */
-    .searchSec .quoteTxt h2{font-size: 23px; transition:all 0.4s linear;}
-    .searchSec .quoteTxt h2 i{font-size: 23px; transition:all 0.4s linear;}
-    .searchSec .searchBox .searchInput{width:350px;}
+
 
     /* search result page style */
     #resultSec .conBox{width:80%; margin-right:0;}
 
-
-    /* recent page */
-    .recentSec .movieContainer .recentMovieWrap{width:40%;}
+    /* latest page recent section */
+    #recentSec .movieContainer .recentMovieWrap{width:40%;}
 
     /* genre section */
-    .genreSec .genreTab{width:100%;}
+    #genreSec .genreTab{width:100%;}
 
     /* footer */
     footer p{font-size:14px;}
@@ -79,11 +62,8 @@
 }
 
 @media screen and (max-width:500px){
-
     /* main pages search section */
-    .searchSec .quoteTxt h2{_font-size: 20px; transition:all 0.4s linear;}
-    .searchSec .quoteTxt h2 i{_font-size: 20px; transition:all 0.4s linear;}
-
+    #searchSec .txtBox h2{font-size:20px;}
 }    
 
 
