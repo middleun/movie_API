@@ -36,10 +36,6 @@
     <!-- media css link -->
     <link rel="stylesheet" href="./css/media.css">
 
-    <!-- animation css link -->
-    <link rel="stylesheet" href="./css/animation.css">
-
-
     <!-- font awesome link -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
 </head>
@@ -59,40 +55,20 @@
             <div class="center">     
 
                 <div class="genreTab">
-                    <button type="button" class="all"><span>All</span></button>
-                    <button type="button" class="action"><span>Action</span></button>
-                    <button type="button" class="romance"><span>Romance</span></button>
-                    <button type="button" class="comedy"><span>Comedy</span></button>
-                    <button type="button" class="animation"><span>Animation</span></button>
-                    <button type="button" class="sci-fi"><span>sci-fi</span></button>
-                    <button type="button" class="thriller"><span>thriller</span></button>
-                    <button type="button" class="mystery"><span>mystery</span></button>
-                    <button type="button" class="adventure"><span>Adventure</span></button>
-
+                    <button type="button" class="action"><i class="fas fa-hand-rock"></i><span>Action</span></button>
+                    <button type="button" class="romance"><i class="fas fa-heart"></i><span>Romance</span></button>
+                    <button type="button" class="comedy"><i class="fas fa-laugh-squint"></i><span>Comedy</span></button>
+                    <button type="button" class="animation"><i class="fas fa-hat-wizard"></i><span>Animation</span></button>
+                    <button type="button" class="sci-fi"><i class="fas fa-robot"></i><span>sci-fi</span></button>
+                    <button type="button" class="thriller"><i class="fas fa-skull-crossbones"></i><span>Thriller</span></button>
+                    <button type="button" class="adventure"><i class="fas fa-binoculars"></i><span>Adventure</span></button>
+                    <button type="button" class="more" onclick="window.open('https://www.imdb.com/feature/genre/','_blank')"><i class="fas fa-plus-circle"></i><span>More Genre</span></button>
                 </div>
                 <!-- end of genre Tab -->
 
                 <div class="genrePan">
-                    <div class="all genreBox">
-                        <div class="slideCon allCon" id="allSlide">
-                        </div>
-
-                    </div>
-                    <div class="action genreBox">                               
-                        
-                        <div class="slideCon actionCon" id="actionSlide">
-                            <!-- <div class="slideBox">
-                                <div>
-                                    <img src="/movie_api/img/sample.jpg" alt="">
-                                    <div class="slideTxt">
-                                        <h3>Title</h3>
-                                        <p class="rating"></p>
-                                    </div>
-                                    <a href="#">Detail</a>
-                                </div>
-                            </div>
-                            end of slide box -->
-                            
+                    <div class="action genreBox">       
+                        <div class="slideCon actionCon" id="actionSlide">                          
                         </div>
                         <!-- end of slideCon -->
                     </div>
@@ -100,47 +76,33 @@
                     <div class="romance genreBox">
                         <div class="slideCon romanceCon" id="romanceSlide">
                         </div>
-
                     </div>
                     <!-- end of romance -->
                     <div class="comedy genreBox">
                         <div class="slideCon comedyCon" id="comedySlide">
                         </div>
-
                     </div>
                     <!-- end of comedy -->
                     <div class="animation genreBox">
                         <div class="slideCon animationCon" id="animationSlide">
                         </div>
-
                     </div>
                     <!-- end of animation -->
                     <div class="sci-fi genreBox">
                         <div class="slideCon sci-fiCon" id="sci-fiSlide">
                         </div>
-
                     </div>
                     <!-- end of sci-fi -->
                     <div class="thriller genreBox">
                         <div class="slideCon thrillerCon" id="thrillerSlide">
                         </div>
-
                     </div>
                     <!-- end of thriller -->
-                    <div class="mystery genreBox">
-                        <div class="slideCon mysteryCon" id="mysterySlide">
-                        </div>
-
-                    </div>
-                    <!-- end of mystery -->
                     <div class="adventure genreBox">
                         <div class="slideCon adventureCon" id="adventureSlide">
                         </div>
-
                     </div>
                     <!-- end of adventure -->
-
-
                 </div>
                 <!-- end of genre panel -->
             </div>

@@ -30,26 +30,28 @@ header .center{display: flex; justify-content: center; align-items: center;}
 /* header top navigation style */
 header .topNav{width:70%; font-family:"Montserrat"}
 header .topNav ul{width:100%; display:flex; justify-content: flex-start;align-items: center; padding:20px 0;}
-header .topNav ul li { width:120px;text-align: center; font-weight: 500;  transition: all 0.4s linear;
+header .topNav ul li { width:120px;text-align: center; font-weight: 600;  transition: all 0.4s linear;
 text-transform: uppercase;}
 header .topNav ul li a{position:relative; display:block;color:#fff; font-size: 18px; padding:6px 12px;
-transition:all 0.4s linear; -webkit-transition:all 0.4s linear;}
+transition:all 0.4s linear; -webkit-transition:all 0.4s linear; z-index:12;}
 header .topNav ul li a:hover,
-header .topNav ul li a:focus{color:#e6363c;}
+header .topNav ul li a:focus{color:#651619;}
 header .topNav ul li a::after
-{content: ''; position:absolute; bottom:-8px; left:50%; transform:translateX(-50%); width:0; height:4px; 
-background: #d94f5c; border-radius:5px;margin-top:2px;transition:all 0.4s linear;}
+{content: ''; position:absolute; bottom:-3px; left:50%; transform:translateX(-50%); width:0; height:50px; 
+background: #fff; border-top:10px solid#D1B9BA; border-radius:0 0 5px 5px;margin-top:2px;transition:all 0.4s linear; z-index:-1;}
 header .topNav ul li a:hover::after,
-header .topNav ul li.active a::after{width:60%;}
-header .topNav ul li.active a{color:#e6363c;}
+header .topNav ul li.active a::after{width:100%;}
+header .topNav ul li.active a{color:#651619;}
 
 /* header search navigation style */
 header .searchNav{width:30%; display:flex; justify-content: flex-end; padding:20px 0;}
 header .searchNav .searchInput{display:block; width:80%; height:40px; margin-right:10px; padding:10px;
-background:#d1b9ba83; border-bottom:1px solid #fff; border-radius: 10px; font-family:'Open Sans';}
+background:#d1b9ba85; border-bottom:1px solid #fff; border-radius: 10px; font-family:'Open Sans';
+transition:all 0.4s;}
 header .searchNav .searchInput::placeholder{color:#fff; letter-spacing: 1.2px;}
 header .searchNav .searchInput:focus::placeholder{color:rgba(255, 255, 255, 0.486);}
-header .searchNav .searchInput:focus{color:#fff; background:none;}
+header .searchNav .searchInput:focus {background: #fff; border: 3px solid #D1B9BA; }
+/* header .searchNav .searchInput:focus{color:#fff; background:none;} */
 header .searchNav button{color:#fff; background:none;}
 header .searchNav button i{font-size:18px;}
 

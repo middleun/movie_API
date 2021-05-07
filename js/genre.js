@@ -31,7 +31,7 @@ $(function(){
                         }
                         // actionCon, romanceCon->box로 파라미터 정리
                         $(box).append(getGenres);
-                        // console.log(data.data.movies[0].title);
+                        console.log(data.data.movies);
 
                         // lightslider 적용
                         // 파라미터 정리
@@ -80,7 +80,7 @@ $(function(){
 
         
 
-        let getGenres = ['all', 'action', 'romance', 'comedy', 'animation', 'sci-fi', 'thriller', 'mystery', 'adventure'];
+        let getGenres = ['action', 'romance', 'comedy', 'animation', 'sci-fi', 'thriller', 'adventure'];
 
         for (let i = 0; i < getGenres.length; i++){   
             getGenre(getGenres[i], '.' + getGenres[i] + 'Con', '#'+getGenres[i] + 'Slide');
@@ -92,18 +92,21 @@ $(function(){
                       
             $(".genreTab button").removeClass("active");
             $(this).addClass("active");  
-            
-            if(this.innerTxt == "All"){
-                $(".genrePan .genreBox").show();
-            }else{
+        
                 let gerIdx=$(this).index();
-                // console.log(gerIdx);
-                                        
-                $(".genrePan .genreBox").hide();       
-                $(".genrePan .genreBox").eq(gerIdx).show();
-                $(".genrePan").css("margin","10px auto");
+                if(gerIdx == '7'){
+                    $(".genrePan .genreBox").show();
 
-            }    
+                }else{
+                    $(".genrePan .genreBox").hide();       
+                    $(".genrePan .genreBox").eq(gerIdx).show();
+                    $(".genrePan").css("margin","10px auto");
+
+                }
+                
+                                        
+                
+                
        
         });
 

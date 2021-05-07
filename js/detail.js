@@ -43,7 +43,6 @@ $(function(){
                                         <div class="txtBox">
                                             <span class="detailDes">${detailData.data.movie.description_intro}</span>
                                         </div>
-
                                     </div>
                                 </div>   
 
@@ -60,7 +59,6 @@ $(function(){
                                                 <img src="${detailData.data.movie.medium_screenshot_image3}" alt="${detailData.data.movie.title} 스크린샷 이미지 3">  
                                             </li>                                               
                                         </ul>
-
                                     </div>
                                 </div>
                                 
@@ -68,14 +66,43 @@ $(function(){
                 getDetail = detailHTML; 
                 // console.log(detailData.data.movie.cast[0].name);
                 $("#detailSec .center").append(detailHTML);
-                $(".detailCast").append(castName);           
+                $(".detailCast").append(castName);  
+                
+                let detailDes=document.querySelector(".detailDes");
+                let desTxt=detailDes.innerText;
+                // console.log(desTxt);
 
+                // Detail Description cut
+                function cutTxt(){
+                    let winWidth=window.innerWidth;
+                    // console.log(winWidth);                    
+                    if(desTxt.length >= 150){
+                        if(winWidth <= 650){                            
+                            detailDes.innerText=desTxt.substr(0,150)+"...";
+                        }else{
+                            detailDes.innerText=desTxt;
+                        }
+                    }else{
+                        return;
+                    }
+                }                
+                window.addEventListener("resize", cutTxt);
+                    
+                    
+                    
+                    
+                
+
+                
            
         }
+
+       
        
 
     });
 
+    
 
 
 });

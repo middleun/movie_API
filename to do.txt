@@ -57,5 +57,5 @@
 13. section class->id✔
  
 
-*. 모든 페이지에 검색창 추가 ? !
->>include/header.php에 추가!
+*. 모든 페이지에 검색창 추가 ? !✔
+>>include/header.php에 추가!✔

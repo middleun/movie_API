@@ -19,17 +19,11 @@ transition:all 0.4s;}
 
 /* search Box */
 #searchSec .searchBox{display:flex; justify-content: center; align-items: center;}
-#searchSec .searchBox .searchInput{width:500px; height:70px; padding:10px; border:none; display: inline-block;
-border-radius: 10px; color:#393631; font-family:"Open Sans"; font-size:16px; transition:all 0.4s;}
+#searchSec .searchBox .searchInput{width:500px; height:70px; display: inline-block; padding:10px; border-bottom:1px solid #fff; 
+border-radius: 10px; background-color: #d1b9ba85; color:#393631; font-family:"Open Sans"; font-size:16px; transition:all 0.4s;}
 #searchSec .searchBox .searchInput::placeholder{font-size:16px;color:#fff; letter-spacing: 1.2px;}
-
-#searchSec .searchBox .searchInput.focusEvent{background-color: #d1b9ba85; border: 2px solid transparent; 
--webkit-transition: background-color 0.25s, border-color 0.25s;transition: background-color 0.25s, border-color 0.25s;}
-#searchSec .searchBox .searchInput.focusEvent:focus {-webkit-transform: translate3d(0, 0, 0);transform: translate3d(0, 0, 0);
-background-color: #fff; border: 3px solid #D1B9BA; }
-#searchSec .searchBox .searchInput.focusEvent:focus::after {-webkit-transform: translate3d(0, 100%, 0);transform: translate3d(0, 100%, 0); }
-#searchSec .searchBox .searchInput.focusEvent:focus::placeholder{color:#fff;}
-
+#searchSec .searchBox .searchInput:focus {background: #fff; border: 3px solid #D1B9BA; }
+#searchSec .searchBox .searchInput:focus::placeholder{color:#fff;}
 #searchSec .searchBox button{width:70px; height:70px; border:none; margin-left:10px; background:none; border-radius: 20px; transition:all 0.4s linear;}
 #searchSec .searchBox button i{color:#D1B9BA; font-size:40px; cursor: pointer;}
 #searchSec .searchBox button:hover i{color:#F0E8E8;}
@@ -48,14 +42,12 @@ overflow: hidden;margin:10px;}
 #recentSec .movieContainer .recentMovieWrap h3{margin-top:5px; text-align:center;font-size:16px; white-space: nowrap; 
 text-overflow:ellipsis; width:100%; overflow: hidden; color:#651619; font-weight: 600;}
 #recentSec .movieContainer .recentMovieWrap .recentMovies .movieImg{position:relative;transition:all 0.4s;}
-
 #recentSec .numContainer{width:100%; height:auto; margin-top:20px; display:flex; 
 justify-content: center; align-items: center; }
 #recentSec .numContainer .numBtns button{border:none; width:30px; height: 30px; font-weight: 600; border-radius: 10px;
 background:#fff;cursor:pointer;}
 #recentSec .numContainer .numBtns button.active,
 #recentSec .numContainer .numBtns button.arrow{background:#651619; color:#fff;}
-
 
 
 /*******************
@@ -73,22 +65,26 @@ padding:0 0 0 10px; font-family:'Noto Sans KR'}
 #resultSec .conBox .txtBox h2{font-size:20px; margin-bottom:5px; color:#651619;}
 #resultSec .conBox .txtBox p{margin-bottom:5px;}
 #resultSec .conBox .txtBox p.director{font-weight:600;}
-#resultSec .conBox .txtBox p.rating{color:#ac8f90;}
+#resultSec .conBox .txtBox p.rating{color:#651619;}
 
 /********************
 genre page style 
  *********************/
 #genreSec{width:100%; height: auto; margin:30px 0;} 
+
 /* genren Tab sytle */
 #genreSec .genreTab{width:100%; height:50px; display:flex; justify-content: space-between; align-items: center;margin:auto;
 background:#fff; border-radius: 5px ; overflow: hidden; transition: all 0.4s linear; }
-#genreSec .genreTab button{width:12%; height:100%; border:none; cursor: pointer; border-right:2px solid #651619;
-font-family: 'Montserrat'; font-size: 16px; font-weight: 600; text-align: center; bottom:0; display:flex; align-items: center;
+#genreSec .genreTab button{width:20%; height:80%; border:none; cursor: pointer; border-right:2px solid #651619;
+font-size: 16px; font-weight: 600; text-align: center; bottom:0; display:flex; align-items: center;
 justify-content: center; color:#651619; transition: all 0.5s; position:relative;}
-#genreSec .genreTab button:nth-child(9){border-right:none;}
-#genreSec .genreTab button span{display:block; bottom:0; }
-#genreSec .genreTab button.active{color:#fff; background:#651619; }
-
+#genreSec .genreTab button:nth-child(8){border-right:none; color:#393631;}
+#genreSec .genreTab button span{display:block; bottom:0;}
+#genreSec .genreTab button i{margin-right:5px;}
+#genreSec .genreTab button:hover,
+#genreSec .genreTab button.active{color:#fff; background:#651619;}
+#genreSec .genreTab button:nth-child(8):hover,
+#genreSec .genreTab button:nth-child(8).active{background:#393631; color:#fff;}
 
  /* genre slide style */
 #genreSec .genrePan>div{margin:30px 0; background:#fff; border-radius: 5px;box-sizing: border-box;
@@ -117,32 +113,25 @@ margin:auto; left:50%; top:1%;transform: translateX(-50%); }
 
 /* detail up */
 #detailSec .detailUp{width:100%; height:70%; background:#fff;}
-#detailSec .detailUp .detailImg{float:left; width:40%; height:100%; _background:#B28B8C;
-display:flex; justify-content: center;align-items: center; box-sizing: border-box;
-padding:30px;}
-#detailSec .detailUp .detailImg img{height:100%;  overflow: hidden; border-radius: 5px;}
-
-#detailSec .detailUp .detailInfo{float:right; width:60%; height:50%; _background:#716d68; font-family: "Work Sans";
-padding:30px 30px 0 0 ;box-sizing: border-box;display:flex; flex-direction: column; justify-content: center;}
+#detailSec .detailUp .detailImg{float:left; width:auto; height:100%; box-sizing: border-box; padding:30px;
+display:flex; justify-content: center; align-items: center;}
+#detailSec .detailUp .detailImg img{width:100%; overflow: hidden; border-radius: 5px;}
+#detailSec .detailUp .detailInfo{width:auto; height:50%; padding:30px 30px 0 0 ;box-sizing: border-box;display:flex; flex-direction: column; justify-content: center;}
 #detailSec .detailUp .detailInfo h3{color:#651619; font-size:30px;width:100%; margin-bottom:20px;}
 #detailSec .detailUp .detailInfo li{color:#393631; margin-bottom:10px;}
+#detailSec .detailUp .detailInfo .detailGenre{white-space:pre-line; text-overflow: ellipsis; overflow: hidden;}
 #detailSec .detailUp .detailInfo .detailRating{color:#651619;}
-
-#detailSec .detailUp .detailTxt{width:60%; height:50%; float:right; padding:20px 30px 20px 0;box-sizing: border-box;
-display:flex; flex-direction: column; _justify-content: center; }
+#detailSec .detailUp .detailTxt{width:auto; height:50%; padding:20px 50px 20px 0;box-sizing: border-box;
+display:flex; flex-direction: column; text-align:justify;}
 #detailSec .detailUp .detailTxt h3{margin-bottom:10px;}
 #detailSec .detailUp .detailTxt .txtBox{height:90%; overflow: hidden;}
 
-
 /* deatil down */
-#detailSec .detailDown{width:100%; height:30%; box-sizing: border-box; padding: 30px; display:flex; justify-content: center;
-align-items: center; background: #B28B8C;}
-#detailSec .detailDown .detailThumb{width:100%; }
+#detailSec .detailDown{width:100%; height:30%; box-sizing: border-box; padding:30px; background: #B28B8C;}
+#detailSec .detailDown .detailThumb{width:100%;}
 #detailSec .detailDown .detailThumb ul{width:100%; height:50%;display:flex; justify-content: space-around;
-align-items: center;
 align-items: center;}
 #detailSec .detailDown .detailThumb ul li{width:30%; height:100%; overflow: hidden; }
-#detailSec .detailDown .detailThumb ul li img{height:100%; overflow: hidden;}
-
+#detailSec .detailDown .detailThumb ul li img{width:100%; overflow: hidden;}
 #detailSec .detailDown .detailThumb ul li:nth-child(1){border-radius: 0 0 0 5px;}
 #detailSec .detailDown .detailThumb ul li:nth-child(3){border-radius: 0 0 5px 0;}
