@@ -3,8 +3,7 @@ $(function(){
     let searchValue = document.location.href.split("=")[1];
     let decodeValue = decodeURI(searchValue);
     // console.log(decodeValue);
-    //  한글로 검색하면 encode한 코드가 결과로 나옴.so,decode해줘야
-    
+    //  한글로 검색하면 encode한 코드가 결과로 나옴.so,decode해줘야    
 
     $.ajax({
        type:"POST",

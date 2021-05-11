@@ -65,14 +65,10 @@
                 <p>[Movie Api Project] Feelm So Good || Designed by Leejungeun </p>
             </div>
         
-        </footer>     
-            
+        </footer>         
         
 
-    </div>
-
-
-    
+    </div>    
 
     <!-- jquery CDN link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

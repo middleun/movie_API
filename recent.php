@@ -22,7 +22,6 @@
     <meta property="og:image" content="http://middleun.dothome.co.kr/movie_api/img/movie_api_bg.jpg">
     <meta property="og:url" content="https://middleun.dothome.co.kr/movie_api">
 
-
     <!-- favicon link -->
     <link rel="icon" href="./img/favicon_32x32.png"/>
 
@@ -46,21 +45,17 @@
         <!-- header -->
         <?php include $_SERVER["DOCUMENT_ROOT"]. "/movie_api/include/header.php";?>  
         
-        
         <div class="loadingBox">
             <img src="./img/loading_8.gif" alt="">
-        </div>          
-
-        
+        </div>                  
         <!-- end of loading Box -->
 
         <section id="recentSec">
             <div class="center">     
-
-                <div class="movieContainer clear">
-                        
+                <div class="movieContainer clear">  
+                <!-- itemcontents appended from search.js-->                
                 </div>
-                    <!-- end of container -->
+                <!-- end of container -->
 
                 <div class="numContainer">
                     <div class="numBtns">
@@ -71,10 +66,9 @@
                         <button type="button" class="pageNum" value=4>4</button>
                         <button type="button" class="pageNum" value=5>5</button>
                         <button type="button" class="next arrow"><i class="fas fa-angle-right"></i></button>
-
                     </div>
                 </div>
-                    <!-- end of number container -->
+                <!-- end of number container -->
             </div>
         </section>
         <!-- end of recent section --> 
@@ -83,12 +77,8 @@
             <div class="center">
                 <p>[Movie Api Project] Feelm So Good || Designed by Leejungeun </p>
             </div>
-        
         </footer>
-            
-
     </div>
-
 
     <!-- jquery CDN link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

@@ -48,7 +48,7 @@
             <div class="center">     
 
                 <span class="border"></span>
-                <!-- 데이터로 들어가는 곳 /detail.js -->
+                <!-- datailHtml from detail.js -->
             </div>
         </section>       
         <!-- end of detail section -->      

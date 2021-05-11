@@ -41,11 +41,13 @@ $(function(){
         topNavLi[2].classList.add('active');
     
     }
+
+    // search navigation 
     const searchNav=document.querySelector('.searchNav');
     const topNav=document.querySelector('.topNav ul');
     // console.log(searchNav);
     if(pathname == '/movie_api/' || pathname.includes('index')){
-        searchNav.style.display="none";
+        searchNav.remove();
         topNav.style.justifyContent="space-around";
     }else{
         searchNav.style.display="flex";

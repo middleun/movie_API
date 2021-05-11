@@ -102,13 +102,8 @@ $(function(){
                     $(".genrePan .genreBox").eq(gerIdx).show();
                     $(".genrePan").css("margin","10px auto");
 
-                }
-                
-                                        
-                
-                
-       
-        });
+                }     
+            });
 
 
         // loading box hide

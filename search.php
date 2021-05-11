@@ -45,21 +45,16 @@
         <!-- header -->
         <?php include $_SERVER["DOCUMENT_ROOT"]. "/movie_api/include/header.php";?>  
         <section id="resultSec">
-            <div class="center">
-                
-                <!-- itemcontents appended from search.js-->
-                
+            <div class="center">                
+            <!-- itemcontents appended from search.js-->                
             </div>
         </section>
 
         <footer>
             <div class="center">
                 <p>[Movie Api Project] Feelm So Good || Designed by Leejungeun </p>
-            </div>
-        
-        </footer>       
-            
-            
+            </div>        
+        </footer>               
         
     </div>
 
