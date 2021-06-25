@@ -1,108 +1,217 @@
-@media screen and (max-width:1280px){
+@media screen and (max-width: 1280px) {
     /* latest page recent section style */
-    #recentSec .movieContainer .recentMovieWrap{width:22%;}
-    #recentSec .movieContainer .recentMovieWrap h3{font-size:14px;}
+    #recentSec .movieContainer .recentMovieWrap {
+        width: 22%;
+    }
+    #recentSec .movieContainer .recentMovieWrap h3 {
+        font-size: 14px;
+    }
 
     /* genre page style */
-    #genreSec .genreTab button{font-size:14px;}
-
+    #genreSec .genreTab button {
+        font-size: 14px;
+    }
 }
 
-@media screen and (max-width:1024px){
+@media screen and (max-width: 1024px) {
     /* search result page style */
-    #resultSec .conBox{width:45%; height:200px; flex-direction: row; margin-right:20px;}
-    #resultSec .conBox .imgBox{width:45%; height:auto; border-radius:5px 0 0 5px;}
-    #resultSec .conBox .txtBox{width:55%; height:auto; padding:0 20px;}
-    #resultSec .conBox:nth-child(even){margin-right:0;}
+    #resultSec .conBox {
+        width: 45%;
+        height: 200px;
+        flex-direction: row;
+        margin-right: 20px;
+    }
+    #resultSec .conBox .imgBox {
+        width: 45%;
+        height: auto;
+        border-radius: 5px 0 0 5px;
+    }
+    #resultSec .conBox .txtBox {
+        width: 55%;
+        height: auto;
+        padding: 0 20px;
+    }
+    #resultSec .conBox:nth-child(even) {
+        margin-right: 0;
+    }
 
     /* latest page recent section */
-    #recentSec .movieContainer .recentMovieWrap{width:29%;}
+    #recentSec .movieContainer .recentMovieWrap {
+        width: 29%;
+    }
 
     /* genre page style */
-    #genreSec .genreTab button{font-size:14px; display:flex; flex-direction: column;}
-
+    #genreSec .genreTab button {
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+    }
 
     /* detail page style */
-    #detailSec .detailUp .detailInfo{padding-top:40px;}
-    #detailSec .detailUp .detailInfo h3{font-size:25px;}
-    #detailSec .detailUp .detailInfo li{margin-bottom:30px;}
-    #detailSec .detailUp .detailTxt{width:100%; padding:0 30px 20px 30px;}
-    
-}    
+    #detailSec .detailUp .detailInfo {
+        padding-top: 40px;
+    }
+    #detailSec .detailUp .detailInfo h3 {
+        font-size: 25px;
+    }
+    #detailSec .detailUp .detailInfo li {
+        margin-bottom: 30px;
+    }
+    #detailSec .detailUp .detailTxt {
+        width: 100%;
+        padding: 0 30px 20px 30px;
+    }
+}
 
-@media screen and (max-width:850px){
+@media screen and (max-width: 850px) {
     /* header style */
-    header .topNav{width:60%;}
-    header .topNav ul li a{font-size:16px;}
-    header .searchNav{width:40%;}
+    header .topNav {
+        width: 60%;
+    }
+    header .topNav ul li a {
+        font-size: 16px;
+    }
+    header .searchNav {
+        width: 40%;
+    }
 
     /* main page search section style */
-    #searchSec .txtBox h2{font-size:25px;}
-    #searchSec .searchBox .searchInput{width:400px; height:60px;}
+    #searchSec .quoteBox h2 {
+        font-size: 25px;
+    }
+    #searchSec .searchBox .searchInput {
+        width: 400px;
+        height: 60px;
+    }
 
     /* search result page sytle */
-    #resultSec .conBox .txtBox h2{font-size:18px;}
-    #resultSec .conBox .txtBox p{font-size:14px;}
+    #resultSec .conBox .txtBox h2 {
+        font-size: 18px;
+    }
+    #resultSec .conBox .txtBox p {
+        font-size: 14px;
+    }
 
     /* genre page style */
-    #genreSec .genreTab button{font-size:12px;}
-    #genreSec .genreTab button i{font-size:18px;}
-    #genreSec .genreTab button span{display:none;}
-    #genreSec .genrePan .genreBox .slideBox>div .txtBox h3{font-size:14px;}
-    
+    #genreSec .genreTab button {
+        font-size: 12px;
+    }
+    #genreSec .genreTab button i {
+        font-size: 18px;
+    }
+    #genreSec .genreTab button span {
+        display: none;
+    }
+    #genreSec .genrePan .genreBox .slideBox > div .txtBox h3 {
+        font-size: 14px;
+    }
 }
 
-@media screen and (max-width:650px){
+@media screen and (max-width: 650px) {
     /* header style */
-    header .center{flex-direction:column;}
-    header .topNav{width:100%;}
-    header .topNav ul{justify-content: center;}
-    header .searchNav{width:100%; justify-content: center;}
-
+    header .center {
+        flex-direction: column;
+    }
+    header .topNav {
+        width: 100%;
+    }
+    header .topNav ul {
+        justify-content: center;
+    }
+    header .searchNav {
+        width: 100%;
+        justify-content: center;
+    }
 
     /* search result page style */
-    #resultSec .conBox{width:80%; margin-right:0;}
+    #resultSec .conBox {
+        width: 80%;
+        margin-right: 0;
+    }
 
     /* latest page recent section */
-    #recentSec .movieContainer .recentMovieWrap{width:40%;}
+    #recentSec .movieContainer .recentMovieWrap {
+        width: 40%;
+    }
 
     /* genre section */
-    #genreSec .genreTab{width:100%;}
-        
+    #genreSec .genreTab {
+        width: 100%;
+    }
+
     /* detail page style */
-    #detailSec .border{width:97%; height:98%;}
-    #detailSec .detailUp .detailImg{width:50%;}
-    #detailSec .detailUp .detailImg img{width:auto; height:100%;}
-    #detailSec .detailUp .detailInfo{width:50%;}
-    #detailSec .detailUp .detailInfo h3{font-size:20px;}
-    #detailSec .detailUp .detailInfo li{margin-bottom:15px; font-size:14px;}
+    #detailSec .border {
+        width: 97%;
+        height: 98%;
+    }
+    #detailSec .detailUp .detailImg {
+        width: 50%;
+    }
+    #detailSec .detailUp .detailImg img {
+        width: auto;
+        height: 100%;
+    }
+    #detailSec .detailUp .detailInfo {
+        width: 50%;
+    }
+    #detailSec .detailUp .detailInfo h3 {
+        font-size: 20px;
+    }
+    #detailSec .detailUp .detailInfo li {
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
     #detailSec .detailUp .detailTxt h3,
-    #detailSec .detailUp .detailTxt .txtBox span{font-size:14px;}
-    #detailSec .detailDown .detailThumb{width:auto;}
-    #detailSec .detailDown .detailThumb ul{flex-direction: column; justify-content: center;}
-    #detailSec .detailDown .detailThumb ul li{width:90%; margin-bottom:10px;}
-    #detailSec .detailDown .detailThumb ul li:nth-child(1){border-radius: 0;}
-    #detailSec .detailDown .detailThumb ul li:nth-child(3){border-radius: 0 0 5px 5px;}
+    #detailSec .detailUp .detailTxt .txtBox span {
+        font-size: 14px;
+    }
+    #detailSec .detailDown .detailThumb {
+        width: auto;
+    }
+    #detailSec .detailDown .detailThumb ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+    #detailSec .detailDown .detailThumb ul li {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+    #detailSec .detailDown .detailThumb ul li:nth-child(1) {
+        border-radius: 0;
+    }
+    #detailSec .detailDown .detailThumb ul li:nth-child(3) {
+        border-radius: 0 0 5px 5px;
+    }
 
     /* footer */
-    footer p{font-size:14px;}
-
+    footer p {
+        font-size: 14px;
+    }
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width: 500px) {
     /* main pages search section */
-    #searchSec .txtBox h2{font-size:20px;}
+    #searchSec .quoteBox h2 {
+        font-size: 20px;
+    }
 
     /* detail page */
-    #detailSec .detailUp .detailInfo h3{font-size:18px;}
-    #detailSec .detailDown .detailThumb ul li img{width:auto; height:100%;}
-
-}    
-
-@media screen and (max-width:400px){
-    #detailSec .detailUp .detailImg{float:none; width:100%;}
-    #detailSec .detailUp .detailInfo{width:100%; padding:0 30px 20px 30px}
-
+    #detailSec .detailUp .detailInfo h3 {
+        font-size: 18px;
+    }
+    #detailSec .detailDown .detailThumb ul li img {
+        width: auto;
+        height: 100%;
+    }
 }
 
-
+@media screen and (max-width: 400px) {
+    #detailSec .detailUp .detailImg {
+        float: none;
+        width: 100%;
+    }
+    #detailSec .detailUp .detailInfo {
+        width: 100%;
+        padding: 0 30px 20px 30px;
+    }
+}

@@ -48,8 +48,9 @@
         <!-- serach section -->
         <section id="searchSec">
             <div class="center">
-                <div class="txtBox">
-                    <h2>Search movie you want</h2>
+                <div class="quoteBox">
+                    <h2>movie quote</h2>
+                    <span>movie source</span>
                 </div>
                 <div class="searchBox">                    
                     <input type="text" class="searchInput focusEvent" placeholder="search movie" title="찾고 싶은 영화를 입력해주세요">
@@ -62,9 +63,9 @@
 
         <footer>
             <div class="center">
-                <p>[Movie Api Project] Feelm So Good || Designed by Leejungeun </p>
+                <p>[Movie Api Project] Feelm So Good || Designed by Leejungeun</p>
+                <a href="https://github.com/middleun/movie_API" target="_blank" title="깃허브 바로가기"> <i class= "fab fa-github"></i></a>
             </div>
-        
         </footer>         
         
 
@@ -75,5 +76,7 @@
 
     <!-- main js -->
     <script src='./js/custom.js'></script>
+    <script src='./js/quotes.js'></script>
+
 </body>
 </html>

@@ -15,8 +15,8 @@ $(function(){
 
     // press enter
     document.addEventListener('keydown', function(e){
-        const keyCode = e.keyCode;
-        if(keyCode == 13){
+        const keyCodeNum = e.keyCode;
+        if(keyCodeNum == 13){
             searchMovie();
         }
     });
