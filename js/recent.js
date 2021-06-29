@@ -11,13 +11,14 @@ $(function(){
         let getDatas=[];
         $.ajax({
             // 한 페이지당 10개씩 보여주기
-            url:'https://yts.mx/api/v2/list_movies.json?sort_by=year&order_by=desc&limit=10&page=' + page,
+            url:'https://yts.mx/api/v2/list_movies.json?sort_by=year&order_by=desc&limit=15&page=' + page,
             
             success:function(data){
                 for(let i=0; i < data.data.movies.length; i++){
                     if(data.data.movies[i].title == ''){
                         data.data.movies[i].title = 'No Title';
                     }
+                    // console.log(data);
                     let recentHTML=  `<div class="recentMovieWrap">
                                             <div class="recentMovies">
                                                 <div class="movieImg">

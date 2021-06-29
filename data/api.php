@@ -3,7 +3,7 @@
   $client_id = "RIhz8EcaJIzl8BIiTD1l";
   $client_secret = "zzR3xjtwhI";
   $encText = urlencode($_POST['search_value']);
-  $url = "https://openapi.naver.com/v1/search/movie.json?query=".$encText; // json 결과
+  $url = "https://openapi.naver.com/v1/search/movie.json?display=20&query=".$encText; // json 결과
 //  $url = "https://openapi.naver.com/v1/search/blog.xml?query=".$encText; // xml 결과
   $is_post = false;
   $ch = curl_init();

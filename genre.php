@@ -112,9 +112,9 @@
 
         <footer>
             <div class="center">
-                <p>[Movie Api Project] Feelm So Good || Designed by Leejungeun </p>
+                <p>[Movie Api Project] Feelm So Good || Designed by Leejungeun</p>
+                <a href="https://github.com/middleun/movie_API" target="_blank" title="깃허브 바로가기"> <i class= "fab fa-github"></i></a>
             </div>
-        
         </footer>                       
             
 

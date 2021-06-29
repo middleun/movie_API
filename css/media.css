@@ -79,6 +79,15 @@
     #searchSec .quoteBox h2 {
         font-size: 25px;
     }
+
+    #searchSec .quoteBox h2 i {
+        font-size: 20px;
+    }
+
+    #searchSec .quoteBox span {
+        font-size: 18px;
+    }
+
     #searchSec .searchBox .searchInput {
         width: 400px;
         height: 60px;
@@ -193,6 +202,13 @@
     /* main pages search section */
     #searchSec .quoteBox h2 {
         font-size: 20px;
+    }
+
+    #searchSec .quoteBox h2 i {
+        font-size: 18px;
+    }
+    #searchSec .quoteBox span {
+        font-size: 16px;
     }
 
     /* detail page */
