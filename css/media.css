@@ -15,6 +15,11 @@
 
 @media screen and (max-width: 1024px) {
     /* search result page style */
+    #searchSec .searchBox {
+        width: 70%;
+        transition: all 0.4s;
+    }
+
     #resultSec .conBox {
         width: 45%;
         height: 200px;
@@ -65,19 +70,28 @@
 
 @media screen and (max-width: 850px) {
     /* header style */
-    header .topNav {
-        width: 60%;
+    header .center {
+        flex-direction: column;
     }
+
+    header .topNav {
+        width: 100%;
+    }
+    header .topNav ul {
+        justify-content: space-around;
+    }
+
     header .topNav ul li a {
         font-size: 16px;
     }
     header .searchNav {
-        width: 40%;
+        width: 100%;
+        justify-content: center;
     }
 
     /* main page search section style */
     #searchSec .quoteBox h2 {
-        font-size: 25px;
+        font-size: 32px;
     }
 
     #searchSec .quoteBox h2 i {
@@ -89,8 +103,11 @@
     }
 
     #searchSec .searchBox .searchInput {
-        width: 400px;
         height: 60px;
+    }
+
+    #searchSec .searchBox button i {
+        font-size: 25px;
     }
 
     /* search result page sytle */
@@ -117,19 +134,14 @@
 }
 
 @media screen and (max-width: 650px) {
-    /* header style */
-    header .center {
-        flex-direction: column;
+    /* main page search section style */
+    #searchSec .quoteBox h2 {
+        font-size: 30px;
     }
-    header .topNav {
-        width: 100%;
-    }
-    header .topNav ul {
-        justify-content: center;
-    }
-    header .searchNav {
-        width: 100%;
-        justify-content: center;
+
+    #searchSec .searchBox {
+        width: 80%;
+        height: 60px;
     }
 
     /* search result page style */
@@ -201,11 +213,13 @@
 @media screen and (max-width: 500px) {
     /* main pages search section */
     #searchSec .quoteBox h2 {
-        font-size: 20px;
+        font-size: 28px;
+        letter-spacing: 0px;
     }
 
     #searchSec .quoteBox h2 i {
-        font-size: 18px;
+        font-size: 10px;
+        padding: 0 4px;
     }
     #searchSec .quoteBox span {
         font-size: 16px;

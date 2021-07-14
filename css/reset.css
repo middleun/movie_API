@@ -71,7 +71,6 @@ button {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.322);
-    _position: relative;
 }
 
 /*******************
@@ -152,9 +151,23 @@ header .searchNav {
     width: 30%;
     display: flex;
     justify-content: flex-end;
-    padding: 20px 0;
+    margin: 20px 0;
 }
-header .searchNav .searchInput {
+
+header .searchNav input {
+    height: auto;
+    padding: 15px;
+}
+
+header .searchNav button {
+    height: auto;
+}
+
+header .searchNav button i {
+    font-size: 18px;
+}
+
+/* header .searchNav .searchInput {
     display: block;
     width: 80%;
     height: 40px;
@@ -177,14 +190,12 @@ header .searchNav .searchInput:focus {
     background: #fff;
     border: 3px solid #d1b9ba;
 }
-/* header .searchNav .searchInput:focus{color:#fff; background:none;} */
+
 header .searchNav button {
     color: #fff;
     background: none;
 }
-header .searchNav button i {
-    font-size: 18px;
-}
+ */
 
 /*******************
 footer style 

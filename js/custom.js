@@ -1,5 +1,24 @@
 $(function(){
-    // search input
+    const searchBox = document.querySelector(".searchBox");
+    // console.log(searchBox);
+    // const searchInput = searchBox.querySelector(".searchInput");
+    // console.log(searchInput);
+    // const sendBtn = searchBox.querySelector(".sendBtn");
+    // console.dir(sendBtn);
+
+    //*** Search Box focus event ****//
+    const FOCUS = "focus"
+    function focusIn(){
+        searchBox.classList.add(FOCUS);
+    }
+
+    function focusOut(){
+        searchBox.classList.remove(FOCUS);
+    }
+    searchBox.addEventListener("focusin", focusIn);
+    searchBox.addEventListener("focusout", focusOut);    
+
+
     function searchMovie(){
         let searchResult=$(".searchInput").val();
         if(!searchResult){
@@ -13,13 +32,14 @@ $(function(){
         searchMovie();
     });
 
-    // press enter
-    document.addEventListener('keydown', function(e){
-        const keyCodeNum = e.keyCode;
-        if(keyCodeNum == 13){
+    // // when press enter key
+    document.addEventListener("keydown", function(e){
+        const keyCode = e.code;
+        // console.log(keyCode);
+        if(keyCode == "Enter"){
             searchMovie();
         }
-    });
+    });   
 
 
     // navigation active, link each page 
@@ -39,7 +59,7 @@ $(function(){
         topNavLi[2].classList.add('active');
     }else if(pathname.includes('detail')){
         topNavLi[2].classList.add('active');
-    
+
     }
 
     // search navigation 
@@ -53,6 +73,4 @@ $(function(){
         searchNav.style.display="flex";
     }
 
-    // console.log(topNavLi[0]);
 });
-

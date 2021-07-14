@@ -6,6 +6,11 @@
 /* search input text & quote text font */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto+Slab:wght@100;200;300;400;500&display=swap");
 
+/* prevent body transition */
+.preload {
+    transition: none !important;
+}
+
 /*******************
  main page style 
  *********************/
@@ -14,25 +19,31 @@
 #searchSec {
     width: 100%;
     height: calc(100vh - 133px);
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
     position: relative;
 }
+
+#searchSec .center {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 #searchSec .quoteBox {
     width: 100%;
-    margin: 50px 0 80px 0;
+    margin-bottom: 80px;
     color: #fff;
 }
 #searchSec .quoteBox h2 {
     margin-bottom: 10px;
     font-weight: 400;
     font-family: Roboto Slab;
-    font-size: 35px;
+    font-size: 34px;
     letter-spacing: 2px;
     text-align: center;
     transition: all 0.4s;
+    word-break: keep-all;
 }
 
 #searchSec .quoteBox h2 i {
@@ -50,52 +61,66 @@
     font-size: 20px;
 }
 
-/* search Box */
-#searchSec .searchBox {
+/* common search Box style */
+.searchBox {
+    width: 60%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    background: none;
+    border-bottom: 3px solid #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.4s;
+    padding: 0 5px;
 }
-#searchSec .searchBox .searchInput {
-    width: 500px;
+
+.searchBox input {
+    width: 90%;
     height: 70px;
     display: inline-block;
     padding: 10px;
-    border-bottom: 1px solid #fff;
-    border-radius: 10px;
-    background-color: #d1b9ba85;
+    background: none;
     color: #393631;
     font-family: "Open Sans";
     font-size: 16px;
     transition: all 0.4s;
 }
-#searchSec .searchBox .searchInput::placeholder {
-    font-size: 16px;
+.searchBox input::placeholder {
+    font-weight: 600;
+    font-size: 18px;
     color: #fff;
     letter-spacing: 1.2px;
 }
-#searchSec .searchBox .searchInput:focus {
-    background: #fff;
-    border: 3px solid #d1b9ba;
-}
-#searchSec .searchBox .searchInput:focus::placeholder {
-    color: #fff;
-}
-#searchSec .searchBox button {
+
+.searchBox button {
     height: 70px;
+    right: 0;
     border: none;
-    margin-left: 10px;
+    outline: none;
     background: none;
-    border-radius: 20px;
     transition: all 0.4s linear;
+    padding: 0 10px;
 }
-#searchSec .searchBox button i {
-    color: #d1b9ba;
-    font-size: 40px;
+
+.searchBox button i {
+    color: #fff;
+    font-size: 30px;
     cursor: pointer;
+    transition: all 0.4s;
 }
-#searchSec .searchBox button:hover i {
-    color: #f0e8e8;
+.searchBox button:hover i {
+    transform: scale(1.2);
+}
+
+/* when focus in searchBox */
+.searchBox.focus {
+    background: #fff;
+    /* border: 3px solid #d1b9ba; */
+}
+
+.searchBox.focus button i {
+    color: #651619;
 }
 
 /* loading box */
@@ -106,7 +131,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    _display: none;
 }
 
 /********************
@@ -193,7 +217,7 @@ search result page style
     margin: 30px 0;
 }
 #resultSec .center {
-    max-width: 980px;
+    max-width: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

@@ -38,7 +38,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
 
 </head>
-<body>
+<body class="preload">
     <div class="wrap">                  
 
         <!-- header -->
@@ -49,13 +49,14 @@
         <section id="searchSec">
             <div class="center">
                 <div class="quoteBox">
+                    <!-- <i class="fas fa-quote-left" style="text-align:right;"></i> -->
                     <h2>movie quote</h2>
+                    <!-- <i class="fas fa-quote-right"></i> -->
                     <span>movie source</span>
                 </div>
                 <div class="searchBox">                    
-                    <input type="text" class="searchInput focusEvent" placeholder="search movie" title="찾고 싶은 영화를 입력해주세요">
-                    <button type="button" class="sendBtn" onkeyup="keydown();"><i class="fas fa-search"></i></button>
-                   
+                    <input type="text" class="searchInput" placeholder="search movie" title="찾고 싶은 영화를 입력해주세요">
+                    <button type="button" class="sendBtn"><i class="fas fa-search"></i></button>
                 </div>                    
             </div>                 
         </section>
