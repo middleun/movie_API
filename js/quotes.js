@@ -40,7 +40,7 @@ const quotes =[
         source:" The Florida Project (2017)"
     },
     {
-        text:"He’s not lost. Not anymore. To infinity……and beyond",
+        text:"He’s not lost. Not anymore. To infinity...and beyond",
         source:"Toy Story 4 (2019)"
     },
     {
@@ -92,7 +92,7 @@ const quoteTxt = document.querySelector(".quoteBox h2");
 const sourceTxt = document.querySelector(".quoteBox span");
 
 function randomQuote(){
-    quoteTxt.innerHTML = `<i class="fas fa-quote-left"></i>${quote}<i class="fas fa-quote-right"></i>`;
+    quoteTxt.innerHTML = `${quote}`;
     sourceTxt.innerText = `- ${source}`;
 }
 randomQuote();

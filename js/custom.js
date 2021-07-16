@@ -1,23 +1,24 @@
 $(function(){
-    const searchBox = document.querySelector(".searchBox");
-    // console.log(searchBox);
-    // const searchInput = searchBox.querySelector(".searchInput");
-    // console.log(searchInput);
-    // const sendBtn = searchBox.querySelector(".sendBtn");
-    // console.dir(sendBtn);
-
+    const searchBox = document.querySelectorAll(".searchBox");
+    console.log(searchBox);    
+    
     //*** Search Box focus event ****//
     const FOCUS = "focus"
-    function focusIn(){
-        searchBox.classList.add(FOCUS);
+    function focusIn(e){
+        // console.dir(e.target);
+        const parent = e.target.parentNode;
+        parent.classList.add(FOCUS);
     }
 
-    function focusOut(){
-        searchBox.classList.remove(FOCUS);
+    function focusOut(e){
+        const parent = e.target.parentNode;
+        parent.classList.remove(FOCUS);
     }
-    searchBox.addEventListener("focusin", focusIn);
-    searchBox.addEventListener("focusout", focusOut);    
-
+    
+    searchBox.forEach(function(event){
+        event.addEventListener("focusin", focusIn);
+        event.addEventListener("focusout", focusOut);
+    });  
 
     function searchMovie(){
         let searchResult=$(".searchInput").val();
@@ -41,7 +42,6 @@ $(function(){
         }
     });   
 
-
     // navigation active, link each page 
     const pathname=window.location.pathname;
     const topNavLi=document.querySelectorAll('header .topNav ul li');
@@ -63,7 +63,8 @@ $(function(){
     }
 
     // search navigation 
-    const searchNav=document.querySelector('.searchNav');
+    const searchNav=searchBox[0];
+    // console.log(searchNav);
     const topNav=document.querySelector('.topNav ul');
     // console.log(searchNav);
     if(pathname == '/movie_api/' || pathname.includes('index')){

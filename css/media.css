@@ -212,15 +212,10 @@
 
 @media screen and (max-width: 500px) {
     /* main pages search section */
-    #searchSec .quoteBox h2 {
-        font-size: 28px;
-        letter-spacing: 0px;
+    #searchSec .quoteBox div i {
+        font-size: 20px;
     }
 
-    #searchSec .quoteBox h2 i {
-        font-size: 10px;
-        padding: 0 4px;
-    }
     #searchSec .quoteBox span {
         font-size: 16px;
     }
@@ -236,6 +231,11 @@
 }
 
 @media screen and (max-width: 400px) {
+    #searchSec .quoteBox h2 {
+        font-size: 28px;
+    }
+
+    /* detail page */
     #detailSec .detailUp .detailImg {
         float: none;
         width: 100%;

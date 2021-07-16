@@ -49,12 +49,14 @@
         <section id="searchSec">
             <div class="center">
                 <div class="quoteBox">
-                    <!-- <i class="fas fa-quote-left" style="text-align:right;"></i> -->
-                    <h2>movie quote</h2>
-                    <!-- <i class="fas fa-quote-right"></i> -->
+                    <div>
+                        <i class="fas fa-quote-left left"></i>
+                        <h2>movie quote</h2>
+                        <i class="fas fa-quote-right right"></i>
+                    </div>
                     <span>movie source</span>
                 </div>
-                <div class="searchBox">                    
+                <div class="searchBox search-box">                    
                     <input type="text" class="searchInput" placeholder="search movie" title="찾고 싶은 영화를 입력해주세요">
                     <button type="button" class="sendBtn"><i class="fas fa-search"></i></button>
                 </div>                    

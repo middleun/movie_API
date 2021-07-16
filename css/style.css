@@ -35,6 +35,30 @@
     margin-bottom: 80px;
     color: #fff;
 }
+
+#searchSec .quoteBox div {
+    display: flex;
+    justify-content: center;
+}
+
+#searchSec .quoteBox div i {
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.486);
+    box-sizing: border-box;
+}
+
+#searchSec .quoteBox div i.left {
+    padding: 0 15px 0 0;
+    align-items: flex-start;
+}
+
+#searchSec .quoteBox div i.right {
+    padding: 0 0 0 15px;
+    align-items: flex-end;
+}
+
 #searchSec .quoteBox h2 {
     margin-bottom: 10px;
     font-weight: 400;
@@ -48,8 +72,8 @@
 
 #searchSec .quoteBox h2 i {
     box-sizing: border-box;
-    padding: 0 10px;
-    color: rgba(255, 255, 255, 0.712);
+    padding: 0 3px;
+    color: rgba(255, 255, 255, 0.486);
     font-size: 25px;
 }
 
@@ -248,6 +272,8 @@ search result page style
 }
 #resultSec .conBox .imgBox img {
     border-radius: 5px;
+    width: 110px;
+    height: 150px;
 }
 #resultSec .conBox .txtBox {
     width: 100%;
